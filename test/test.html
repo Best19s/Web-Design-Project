@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .container {
+         display: flex;
+      }
+      .home {
+         width: 120px;
+         display: flex;
+      }
+      img {
+         width: 120px;
+         display: inline;
+      }
+      .image_off,
+      .home:hover .image_on {
+         display: none
+      }
+
+      .image_on,
+      .home:hover .image_off {
+         display: block
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <a class="home">
+         <img class="image_on" src="/img/pic_card_5.jpg" alt="logo" />
+         <img class="image_off" src="/img/pic_card_5-hov.jpg" alt="logo" />
+      </a>
+      <a class="home">
+         <img class="image_on" src="/img/pic_card_1.jpg" alt="logo" />
+         <img class="image_off" src="/img/pic_card_2.jpg" alt="logo" />
+      </a>
+      <a class="home">
+         <img class="image_on" src="/img/pic_card_1.jpg" alt="logo" />
+         <img class="image_off" src="/img/pic_card_2.jpg" alt="logo" />
+      </a>
+   </div>
+
+</body>
+
+</html>

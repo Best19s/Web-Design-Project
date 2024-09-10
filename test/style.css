@@ -1,0 +1,12 @@
+@import url(fonts.css);
+@import url(nav.css);
+
+body {
+  margin: 0;
+  font-family: "Text-font";
+}
+
+
+.container {
+   padding: 5rem;
+ }
