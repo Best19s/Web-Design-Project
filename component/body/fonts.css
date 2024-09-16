@@ -1,0 +1,12 @@
+@font-face {
+   font-family: "Text-font";
+   src: url(../../asset/fonts/Satoshi-Regular.otf);
+ }
+ @font-face {
+   font-family: "Heading-font";
+   src: url(../../asset/fonts/Boska-BoldItalic.otf);
+ }
+ @font-face {
+   font-family: "paragraph-font";
+   src: url(../../asset/fonts/Boska-Regular.otf);
+ }
