@@ -177,3 +177,8 @@
  .overlay:hover .btn-link {
    display: block;
  }
+
+
+ .hamburger_menu {
+   display: none;
+ }
