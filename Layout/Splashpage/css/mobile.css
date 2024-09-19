@@ -116,6 +116,7 @@
     }
 
     .btn-introduce a{
+      background-color: lightblue;
       text-align: center;
       display: inline-block;
       box-sizing: border-box;

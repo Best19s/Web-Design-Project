@@ -1,61 +1,78 @@
 <style>
    .box {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-}
+      position: relative;
+      width: 500px;
+      height: 500px;
+      overflow: hidden;
+   }
 
-.box-body {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  transition: transform 1s ease;
-}
+   .box-body {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      transition: transform 1s ease;
+   }
 
-.box-body img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+   .box-body img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
 
-.active {
-  transform: translateX(-100%);
-}
-
+   .active {
+      transform: translateX(-100%);
+   }
 </style>
 <div class="box">
    <div class="heading-text">
-     <h1>Belle</h1>
+      <h1>Belle</h1>
    </div>
    <div class="sub-heading-text">
-     <a href="">Get shopping</a>
+      <a href="">Get shopping</a>
    </div>
    <div class="box-body"><img src="/img/pic_card_1.jpg" alt="" id="img-1"></div>
    <div class="box-body"><img src="/img/pic_card_2.jpg" alt="" id="img-2"></div>
    <div class="box-body"><img src="/img/pic_card_3.jpg" alt="" id="img-3"></div>
    <div class="box-body"><img src="/img/pic_card_4.jpg" alt="" id="img-4"></div>
- </div>
+</div>
 
- <script>
+<script>
    let currentSlide = 0;
-const slides = document.querySelectorAll('.box-body');
-const totalSlides = slides.length;
+   const slides = document.querySelectorAll('.box-body');
+   const totalSlides = slides.length;
 
-function showSlide() {
-  slides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${(index - currentSlide) * 100}%)`;
-  });
-}
+   function showSlide() {
+      slides.forEach((slide, index) => {
+         slide.classList.remove('active');
+         if (index === currentSlide) {
+            slide.classList.add('active');
+         }
+      });
+   }
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  showSlide();
-}
+   function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide();
+   }
 
-setInterval(nextSlide, 3000); // เปลี่ยนภาพทุก 3 วินาที
-showSlide();
+   // เปิดหน้าแล้วแสดงภาพแรก
+   showSlide();
 
- </script>
+   // ตรวจสอบขนาดหน้าจอ
+   function startSlideshow() {
+      if (window.innerWidth <= 768) {
+         setInterval(nextSlide, 3000); // เริ่มสไลด์อัตโนมัติทุก 3 วินาทีเฉพาะบน mobile
+      }
+   }
+
+   // เรียกใช้งานสไลด์เมื่อเปิดหน้าเว็บ
+   startSlideshow();
+
+   // ถ้ามีการปรับขนาดหน้าจอใหม่
+   window.addEventListener('resize', () => {
+      startSlideshow();
+   });
+
+</script>
