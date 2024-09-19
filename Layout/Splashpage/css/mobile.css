@@ -6,7 +6,12 @@
    nav .dropdown-1 {
       display: none;
    }
+   nav .hamburger_menu {
+      font-size: large;
+      margin-right: 1rem;
+   }
    nav .logo-brand {
+      text-align: center;
       margin-left: auto;
       margin-right: auto;
    }
@@ -19,7 +24,12 @@
    .wrapper {
       display: flex;
       flex-direction: column;
+      margin-bottom: 1rem;
+   }
 
+   .wrapper:last-child {
+      display: flex;
+      flex-direction: column-reverse;
    }
 
    .heading-text {
@@ -30,7 +40,7 @@
    }
 
    .introduce {
-      text-align: center;
+      text-align: start;
    }
    .introduce h1{
       font-size: 2rem;
@@ -70,7 +80,7 @@
       display: none;
     }
 
-    #left-div.introduce {
+    #left-div.introduce, #right-div.introduce {
       margin: 0;
     }
 
@@ -83,9 +93,33 @@
     .btn-link {
       display: block;
     }
+    .btn-link h2 {
+      margin: .5rem;
+    }
 
     .hamburger_menu {
       display: block;
+    }
+    .category-tag {
+      width: 100%;
+      margin: 0;
+    }
+    .category-tag a {
+      background-color: skyblue;
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+      display: inline-block;
+      box-sizing: border-box;
+      border-radius: 0;
+      border: 2px solid #000;
+    }
+
+    .btn-introduce a{
+      text-align: center;
+      display: inline-block;
+      box-sizing: border-box;
+      width: 100%;
     }
 
 
@@ -94,10 +128,9 @@
 
 
 
-
    footer {
-      /* display: none; */
-      display: flex;
+      display: none;
+      /* display: flex; */
       flex-direction: column;
    }
 
