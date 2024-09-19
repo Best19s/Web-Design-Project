@@ -1,0 +1,86 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(tablet.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ADD8E6;
+    padding: 20px;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    
+}
+.content_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_header ul{
+    display: flex;
+    list-style-type: none;
+}
+.content_header ul li{
+    padding-right: 40px;
+}
+.content_header a{
+    text-decoration: none;
+    color: black;
+}
+.BEM{
+    position: sticky;
+    top: 81px;
+    z-index: 998;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    background-color: white;
+    margin: 0 80px;
+}
+.BEM ul{
+    display: flex;
+    list-style-type: none;
+}   
+.BEM li{
+    margin-right: 40px;
+}
+.back{
+    position: sticky;
+    top: 143px;
+    z-index: 997;
+    border-bottom: 1px solid #000;
+    background-color: white;
+    padding: 10px ;
+    margin: 0 80px;
+}
+section{    
+    display: flex;
+    margin: 0 80px;
+}
+main{
+    width: 65%;
+    background-color: red;
+}
+aside{
+    width: 35%;
+    background-color: #ADD8E6;
+}

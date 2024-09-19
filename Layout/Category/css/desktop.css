@@ -12,22 +12,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
-
-/* header{
-    display: flex;
-    justify-content: space-between;
-    background-color: #ADD8E6;
-    padding: 20px;
-    font-size: 1.2em;
-    position: relative;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    
-    z-index: 1;
-} */
+body{
+    /* height: 3000px; */
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -37,7 +25,7 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
 }
 .logo_header{
     display: flex;
@@ -63,9 +51,13 @@ header {
     color: black;
 }
 .BEM{
-    width: 100%;
-    border: 1px solid #000;
+    position: sticky;
+    top: 81px;
+    z-index: 998;
+    border-bottom: 1px solid #000;
     padding: 20px;
+    background-color: white;
+    margin: 0 80px;
 }
 .BEM ul{
     display: flex;
@@ -74,42 +66,47 @@ header {
 .BEM li{
     margin-right: 40px;
 }
-section{
-    width: 100%;
-}
-/* aside{
-    width: 25%;
-    float: left;
-    margin:0 60px 0 80px;
-    padding: 20px;
+.back{
     position: sticky;
-    top: 10px;
-} */
+    top: 143px;
+    z-index: 997;
+    border-bottom: 1px solid #000;
+    background-color: white;
+    padding: 10px ;
+    margin: 0 80px;
+}
+section{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    /* position: sticky;
+    top: 120px;
+    z-index: 996; */
+}
 aside {
     width: 25%;
-    padding: 20px;
-    position: sticky;
-    top: 100px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* padding: 20px; */
+    /* background-color: #f9f9f9; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    margin-left: 80px;
     margin-right: 20px;
 }
 main{
-    flex: 1;
-    padding: 20px;
+    width: 67%;
 }
 .search{
+    width: 100%;
     display: flex;
-    /* float: right; */
-    /* width: 100%; */
     margin-bottom: 20px;
     justify-content: space-between;
     margin-right: 80px;
+    /* border: 1px solid #000; */
 }
 .recommended_main{
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-right: 80px;
 }
 .input_recommended {
     /* width: 40%; */
@@ -119,15 +116,21 @@ main{
     align-items: center; */
     
 }
-.search-container{
-    display: inline;
-    /* width: 40%; */
+.search-container {
+    display: inline-flex; /* เปลี่ยนเป็น inline-flex เพื่อจัดเรียง input และ button ในแถวเดียวกัน */
+    align-items: center; /* จัดให้ input และ button อยู่ตรงกลางในแนวตั้ง */
 }
+
 .search-container input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
+    width: 309px; 
+    padding: 10px;
     font-size: 17px;
-    border: none;
+    border: 1px solid #000;
+}
+
+#btn_search {
+    padding: 11px;
+    cursor: pointer;
 }
 .input_search{
     border: 1px solid #000;
@@ -138,10 +141,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     margin-right: 80px;
-    gap: 30.48px;
+    gap: 14px;
 }
 .box_content{
-    width: 31.3333333333%;
+    width: 32.3333333333%;
     border: 1px solid #000;
     /* margin: 10px; */
 }
@@ -152,14 +155,14 @@ main{
 
 .Filters{
     border: 1px solid #000;
-    padding: 20px;
+    padding: 40px;
     background-color: #ADD8E6;
     position: sticky;
-    top: 10px;
+    top: 200px;
+    z-index: 995;
 }
 .Filters h2{
     margin: 20px;
-
 }
 .Filters .input_box select{
     margin-top: 10px;
@@ -174,19 +177,45 @@ aside h1{
     padding: 20px 0;
 }
 #size_input{
-    /* display: flex; */
-    flex-wrap: wrap;
-}
-.box_size{    
-    border: 1px solid #000;
-    padding: 10px 30px;
-    margin: 5px;
-    border-radius: 12px;
+    width: 100%;
+    height: auto;
 }
 .size_box{
     display: flex;
     flex-wrap: wrap;
 }
+.box_size {    
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_size button{
+    text-align: center;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin: 5px 10px 5px 0;
+    border-radius: 12px;
+    background-color:  #41C9E2; 
+    /* margin: 5px;  */
+    color: #333333; 
+    border-radius: 12px; 
+    cursor: pointer; 
+}
+
+.box_size button:hover {
+    background-color: #ACE2E1; /* เปลี่ยนพื้นหลังเมื่อ hover */
+}
+
+.box_size button:active {
+    background-color: #7695FF; /* เปลี่ยนพื้นหลังเมื่อ active */
+    color: #000; /* สีข้อความเมื่อ active */
+}
+
+.box_size button.selected {
+    background-color: #007bff; /* เปลี่ยนพื้นหลังเมื่อถูกเลือก */
+    color: white; /* สีข้อความเป็นสีขาว */
+    border-color: #007bff; /* เปลี่ยนสีขอบ */
+}
+
 .see_rang{
     margin: 5px 0 20px 0;
 }
@@ -225,3 +254,4 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer; /* แสดง pointer เมื่อ hover */
     border: 1px solid #000;
 }
+
