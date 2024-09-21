@@ -1,0 +1,33 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(desktop.css);
+
+
+@media screen and (min-width:578px) and (max-width:1024px){
+    body{
+        background-color: aliceblue;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 1.0rem;
+    }
+    section{
+        display: block;
+    }
+    main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        padding: 0;
+        margin: 0 20px;
+    }
+    
+}

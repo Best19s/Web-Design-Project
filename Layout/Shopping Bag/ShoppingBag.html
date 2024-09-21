@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/desktop.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="logo_header">
-            <h2>Belle.</h2>
+            <h2>DRIES VAN NOTENBelle.</h2>
         </div>
         <div class="content_header">
             <ul>
@@ -36,93 +37,279 @@
     </div>
     <div class="back">
         <p>back</p>
-    </div>
+    </div> -->
     <section>
         <main>
             <div class="box_content">
-                <img src="/img/men_shirt_1.jpg" alt="">
-                    <h4></h4>
-                    <p></p>
-                    <div class="price_content">
-                        <p><b>$785</b></p>
-                    </div>
-                    <p>Size : M</p>
-                    <p>Color :More colors</p>
-                    <div class="add_to_wish">
-                        <p>Add to wish lish</p>
-                    </div>
-            </div>
-            <div class="box_content">
-                <img src="/img/men_shirt_1.jpg" alt="">
-                    <h4></h4>
-                    <p></p>
-                    <div class="price_content">
-                        <p><b>$785</b></p>
-                    </div>
-                    <p>Size : M</p>
-                    <p>Color :More colors</p>
-                    <div class="add_to_wish">
-                        <p>Add to wish lish</p>
-                    </div>
-            </div>
-            <div class="box_content">
-                <img src="/img/men_shirt_1.jpg" alt="">
-                    <h4></h4>
-                    <p></p>
-                    <div class="price_content">
-                        <p><b>$785</b></p>
-                    </div>
-                    <p>Size : M</p>
-                    <p>Color :More colors</p>
-                    <div class="add_to_wish">
-                        <p>Add to wish lish</p>
-                    </div>
-            </div>
-            <div class="box_content">
-                <img src="/img/men_shirt_1.jpg" alt="">
-                    <h4></h4>
-                    <p></p>
-                    <div class="price_content">
-                        <p><b>$785</b></p>
-                    </div>
-                    <p>Size : M</p>
-                    <p>Color :More colors</p>
-                    <div class="add_to_wish">
-                        <p>Add to wish lish</p>
-                    </div>
-            </div>
-            <div class="box_content">
-                <img src="/img/men_shirt_1.jpg" alt="">
-                    <h4></h4>
-                    <p></p>
-                    <div class="price_content">
-                        <p><b>$785</b></p>
-                    </div>
-                    <p>Size : M</p>
-                    <p>Color :More colors</p>
-                    <div class="add_to_wish">
-                        <p>Add to wish lish</p>
-                    </div>
-            </div>
+                <div class="box_image_main">
+                    <img class="image_main" src="/img/men_shirt_1.jpg" alt="">
+                </div>
+                <div class="text_main">
+                    <div class="header_box_main">
+                        <div class="header_name_main">
+                            <h2>DRIES VAN NOTEN</h2>
+                            <p>Ribbed merino wool sweater</p>
+                        </div>
+                        <div class="header_delete_main">
+                            <i class="bi bi-trash3"></i>Remove
+                        </div>
 
+                    </div>
+                    <div class="price_content">
+                        <div class="price_1_content">
+                            <p><b><del>$285</del></b></p>
+                        </div>
+                        <div class="price_1_content"></div>
+                        <p><b>$785</b></p>
+                    </div>
+                    <div class="size-options">
+                        <label for="size-select">Size:</label>
+                        <select id="size-select" name="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="color-options">
+                        <label for="color-select">Color:</label>
+                        <select id="color-select" name="color">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </div>
+
+                    <div class="quantity_main">
+                        <label for="">Quantity</label>
+                        <div class="add_quantity">
+                            <div class="minus">-</div>
+                            <div class="num">1</div>
+                            <div class="plus">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box_content">
+                <div class="box_image_main">
+                    <img class="image_main" src="/img/men_shirt_1.jpg" alt="">
+                </div>
+                <div class="text_main">
+                    <div class="header_box_main">
+                        <div class="header_name_main">
+                            <h2>DRIES VAN NOTEN</h2>
+                            <p>Ribbed merino wool sweater</p>
+                        </div>
+                        <div class="header_delete_main">
+                            <i class="bi bi-trash3"></i>Remove
+                        </div>
+
+                    </div>
+                    <div class="price_content">
+                        <div class="price_1_content">
+                            <p><b><del>$285</del></b></p>
+                        </div>
+                        <div class="price_1_content"></div>
+                        <p><b>$785</b></p>
+                    </div>
+                    <div class="size-options">
+                        <label for="size-select">Size:</label>
+                        <select id="size-select" name="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="color-options">
+                        <label for="color-select">Color:</label>
+                        <select id="color-select" name="color">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </div>
+                    <div class="quantity_main">
+                        <label for="">Quantity</label>
+                        <div class="add_quantity">
+                            <div class="minus">-</div>
+                            <div class="num">1</div>
+                            <div class="plus">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box_content">
+                <div class="box_image_main">
+                    <img class="image_main" src="/img/men_shirt_1.jpg" alt="">
+                </div>
+                <div class="text_main">
+                    <div class="header_box_main">
+                        <div class="header_name_main">
+                            <h2>DRIES VAN NOTEN</h2>
+                            <p>Ribbed merino wool sweater</p>
+                        </div>
+                        <div class="header_delete_main">
+                            <i class="bi bi-trash3"></i>Remove
+                        </div>
+
+                    </div>
+                    <div class="price_content">
+                        <div class="price_1_content">
+                            <p><b><del>$285</del></b></p>
+                        </div>
+                        <div class="price_1_content"></div>
+                        <p><b>$785</b></p>
+                    </div>
+                    <div class="size-options">
+                        <label for="size-select">Size:</label>
+                        <select id="size-select" name="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="color-options">
+                        <label for="color-select">Color:</label>
+                        <select id="color-select" name="color">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </div>
+                    <div class="quantity_main">
+                        <label for="">Quantity</label>
+                        <div class="add_quantity">
+                            <div class="minus">-</div>
+                            <div class="num">1</div>
+                            <div class="plus">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box_content">
+                <div class="box_image_main">
+                    <img class="image_main" src="/img/men_shirt_1.jpg" alt="">
+                </div>
+                <div class="text_main">
+                    <div class="header_box_main">
+                        <div class="header_name_main">
+                            <h2>DRIES VAN NOTEN</h2>
+                            <p>Ribbed merino wool sweater</p>
+                        </div>
+                        <div class="header_delete_main">
+                            <i class="bi bi-trash3"></i>Remove
+                        </div>
+
+                    </div>
+                    <div class="price_content">
+                        <div class="price_1_content">
+                            <p><b><del>$285</del></b></p>
+                        </div>
+                        <div class="price_1_content"></div>
+                        <p><b>$785</b></p>
+                    </div>
+                    <div class="size-options">
+                        <label for="size-select">Size:</label>
+                        <select id="size-select" name="size">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="color-options">
+                        <label for="color-select">Color:</label>
+                        <select id="color-select" name="color">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </div>
+                
+                    <div class="quantity_main">
+                        <label for="">Quantity</label>
+                        <div class="add_quantity">
+                            <div class="minus">-</div>
+                            <div class="num">1</div>
+                            <div class="plus">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <aside>
             <div class="content_total">
-                <h2>Total  2  prices</h2>
+                <h2>Total 2 price</h2>
                 <div class="box_total">
                     <div class="box_tatol_header">
                         <div class="box_in_tatol">Discounts</div>
-                        <div class="box_in_tatol">Add</div>
+                        <div class="box_in_tatol"><a href="#">Add</a></div>
                     </div>
-                    <div class="text_total"></div>
-                    <div class="text_total"></div>
-                    <div class="text_total"></div>
-                    <div class="text_total"></div>
-                    <div class="text_total"></div>
+
+                    <div class="box_text_total">
+                        <div class="text_total">
+                            <p>List of product</p>
+                            <p>2 price</p>
+                        </div>
+                        <div class="in_text_total">
+                            <div class="text_total">
+                               <p> 1.dries van noten</p>
+                               <p>$128.00</p>
+                            </div>
+                            <div class="text_total">
+                                <p>2.dries vannoten</p>
+                                <p>$248.00</p>
+                            </div>
+                        </div>
+                        <div class="text_total">
+                            <h4>VAT 7%</h4>
+                            <p>$9.46</p>
+                        </div>
+                        <div class="text_total">
+                            <h4>Discounts</h4>
+                            <p>$0</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="text_total">
+                            <h3>Total Price</h3>
+                            <p>$238</p>
+                        </div>
+                        
+                    </div>
+                    <div class="btn_continue_checkout">
+                        <a>Continue to checkout</a>
+                    </div>
                 </div>
             </div>
         </aside>
     </section>
+    <script>
+        const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+
+        let a = 1;
+        plus.addEventListener("click", () => {
+            a++;
+            a = (a < 10) ? a : a;
+            num.innerText = a;
+            console.log(a);
+        });
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                a = (a < 10) ? a : a;
+                num.innerText = a;
+            }
+
+        });
+    </script>
 </body>
 
 </html>
