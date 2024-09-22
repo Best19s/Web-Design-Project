@@ -1,0 +1,64 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(desktop.css);
+@import url(tablet.css);
+
+@media screen and (width < 578px){
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main{
+        margin: 0;
+        padding: 20px;
+       background-color: royalblue;
+       min-width: 482px;
+        min-height: 1523.8px;
+        
+    }
+    #image_2{
+        display:none;
+    }
+    .box_content{
+        width: 100%;
+        display: block;
+        background-color: aquamarine;
+        
+        
+    }
+    .box_image_main {
+        width: 100%;
+        min-width:0;
+        min-height: 0;
+        display: flex; /* ให้รูปต่อกันแนวนอน */
+        overflow: hidden;
+        object-fit: cover;
+        
+    }
+    .box_image_main img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover; /* ปรับตามต้องการ */
+    }
+    
+    .text_main_box{
+        width: 60%;
+    }
+    .text_main {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* จัดเรียงในแนวตั้ง */
+        justify-content: center; /* จัดกลางในแนวตั้ง */
+        align-items: center; /* จัดกลางในแนวนอน */
+        padding: 0;
+        min-height: 400px; /* เพิ่มความสูงขั้นต่ำ */
+    }
+}
