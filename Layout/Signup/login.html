@@ -5,9 +5,12 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <!-- icon -->
    <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
    <link rel="stylesheet" href="css/desktop.css">
+   <link rel="stylesheet" href="css/mobile.css">
+   <link rel="stylesheet" href="css/tablet.css">
 </head>
 
 <body>
@@ -23,41 +26,61 @@
       </ul>
    </nav>
 
+
    <div class="login_wrapper">
+
+      <div class="bg_fill">
+         <img src="../../asset/img/login_img_bg.jpg" alt="">
+      </div>
       <div class="login_form_body">
          <h1>Login</h1>
          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, voluptatum?</p>
          <br>
          <form action="../Homepage/." method="get">
-            <label for="username_in">Username: </label> <input type="text" name="username_in" placeholder="Username"
-               maxlength="25" required>
-            <!-- <label for="email_in">Email: </label> <input type="email" id="email" name="email_in" placeholder="example@gmail.com" required> -->
+            <label for="username_in">Username: </label> <input type="text" name="username_in" placeholder="Username" maxlength="25" required>
+            <label for="email_in">Email: </label> <input type="email" id="email" name="email_in" placeholder="example@gmail.com" required>
             <div class="password">
-               <label for="password_in">Password: </label> <input type="password" placeholder="password" maxlength="20"
-                  id="password_in" class="pass" required>
+               <label for="password_in">Password: </label> <input type="password" placeholder="password" maxlength="20" id="password_in"
+                  class="pass" required>
                <span class="material-symbols-outlined">
                   visibility
                </span>
             </div>
-            <div class="remember">
-               <input type="checkbox" name="remember" id="remember_in"> <label for="remember_in">Keep me logged in</label>
+            <div class="password">
+               <label for="password_con_id">Confirm Password: </label> <input type="password" placeholder="password" maxlength="20" id="password_con_id"
+                  class="pass" required>
+               <span class="material-symbols-outlined">
+                  visibility
+               </span>
             </div>
 
+            <label for="city">Phone: </label><br>
+            <div class="phone_box">
+               <select name="city_tel" id="city">
+                  <option value="">(66+)</option>
+                  <option value="">(66+)</option>
+                  <option value="">(66+)</option>
+                  <option value="">(66+)</option>
+                  <option value="">(66+)</option>
+               </select>
+               <input type="tel" placeholder="000-000-0000" name="" id="phone" required>
+            </div>
 
-            <input type="submit" value="Login">
+            <!-- <input type="submit" value="Sign Up"> -->
+            <div class="accept_terms_checkbox">
+               <h3><input type="checkbox" name="checkbox" id="checkbox_in"><span
+                     class="material-symbols-outlined">info</span>Acceptance of Terms</h3>
+               <p>You agree to comply with these terms and conditions, as well as any applicable laws and regulations.
+               </p>
+            </div>
+
+            <input type="submit" value="Sign Up">
             <div class="login_link">
-               <p>Don't have an account? <span><a href="../Login/login.html">Create Account!</a></span></p>
+               <p>Already have an account <span><a href="../Login/login.html">Login!</a></span></p>
             </div>
-
-            <p>or login with</p>
-
          </form>
       </div>
 
-
-      <div class="bg_fill">
-         <img src="../../img/pic_login.jpg" alt="">
-      </div>
    </div>
 
    <script>
@@ -94,8 +117,20 @@
             }
          });
       });
-   </script>
 
+
+      // password
+      document.getElementById('phone').addEventListener('input', function (e) {
+         let value = e.target.value.replace(/\D/g, ''); // ลบอักขระที่ไม่ใช่ตัวเลข
+         if (value.length > 3 && value.length <= 6) {
+            value = value.slice(0, 3) + '-' + value.slice(3);
+         } else if (value.length > 6) {
+            value = value.slice(0, 3) + '-' + value.slice(3, 6) + '-' + value.slice(6, 10);
+         }
+         e.target.value = value;
+      });
+
+   </script>
 </body>
 
 </html>
