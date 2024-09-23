@@ -6,9 +6,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="css/desktop.css">
+   <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/grid.js"></script>
+
 </head>
 
 <body>
+
+   <div class="loading_wrapper">
+      <l-grid size="60" speed="1.5" color="black"></l-grid>
+   </div>
+
    <nav>
       <div class="logo-brand">
          <a href="">
@@ -254,6 +261,29 @@
       </div>
    </footer>
 
+
+   <script>
+      window.addEventListener("load", () => {
+         const loader = document.querySelector(".loading_wrapper");
+
+         // Delay เป็นเวลา 3 วินาที (3000 milliseconds) ก่อนจะซ่อน loader
+         setTimeout(() => {
+            loader.classList.add("loading--hidden");
+            window.scrollTo(0, 0);
+
+            loader.addEventListener("transitionend", (event) => {
+               if (event.propertyName === "opacity") {
+                  document.body.removeChild(loader);
+               }
+            });
+         }, 3000);  // 3000ms = 3 วินาที
+
+      });
+
+
+
+
+   </script>
 </body>
 
 </html>
