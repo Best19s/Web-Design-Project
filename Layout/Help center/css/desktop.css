@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 3000px;
+}
+
+section {
+    margin: 10px;
+    min-width: 335px;
+    /* min-height: 950px; */
+}
+
+.box_header {
+    /* border: 1px solid #000; */
+    position: sticky;
+}
+
+.box_header_1 {
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+}
+
+.box_header_2 {
+    padding: 20px;
+    padding-top: 65px;
+    position: relative;
+    top: 5px;
+    border: 1px solid #000;
+    background-color: #ADD8E6;
+    margin: 10px 4px;
+    z-index: 1;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.box_body {
+    position: static;
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_footer {
+    margin-top: 20px;
+}
+
+#category {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+#message {
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px 0 0 20px;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.btn_send_message {
+    /* background-color: #ADD8E6; */
+}
+
+.btn_send_message a {
+    display: flex;
+    justify-content: center;
+    background-color: #0E6EB3;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: 20px;
+    font-size: 1.3em;
+    border-radius: 12px;
+}
+
+/* ซ่อนไอคอนเดิมของ details */
+details summary {
+    list-style: none;
+    /* ปิดไอคอนเริ่มต้น */
+    cursor: pointer;
+    /* เปลี่ยนลูกศรเป็นรูปมือเมื่อ hover */ 
+}
+
+/* เพิ่มไอคอนก่อน summary (ปิดอยู่) */
+details summary::before {
+    content: "+ ";
+    /* ไอคอนเมื่อปิด (ใช้ Unicode หรือตัวอักษรพิเศษ) */
+    font-size: 16px;
+    margin-right: 5px;
+    /* ระยะห่างระหว่างไอคอนและข้อความ */
+}
+
+/* เปลี่ยนไอคอนเมื่อเปิด */
+details[open] summary::before {
+    content: "- ";
+    /* ไอคอนเมื่อเปิด (เปลี่ยนจากลูกศรชี้ขวาเป็นชี้ลง) */
+}
