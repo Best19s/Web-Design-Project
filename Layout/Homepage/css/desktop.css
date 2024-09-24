@@ -7,6 +7,10 @@
 @import url(mobile.css);
 @import url(tablet.css);
 
+nav.scrolled {
+   background-color: rgba(173, 216, 230, 0.8); /* ลด opacity เมื่อเลื่อน */
+   opacity: 0.8;
+ }
 
 .card-container {
    display: flex;
@@ -25,6 +29,7 @@
  .card img {
    width: 100%;
    height: auto;
+   animation: fade 0.40s ease-in;
  }
 
  .image_off,
@@ -37,15 +42,26 @@
    display: block;
  }
 
+ .img_text_intro {
+   width: 100%;
+ }
+ .img_text_intro img {
+   display: block;
+   object-fit: cover;
+   object-position: 50% 40%;
+   width: 100%;
+   height: 500px;
+
+ }
 
 .img_head {
-   margin-top: 2rem;
    width: 100%;
    position: relative;
 }
+
 .img_head img {
    width: 100%;
-   border-radius: 5px;
+   display: block;
 }
 
 .card-hover {
@@ -79,36 +95,59 @@
    margin: 0;
 }
 
+.heading_text {
 
-.heading h1{
+   width: 60%;
+
+}
+.heading_text img {
+   position: absolute;
+   width: 100px;
+   top: 10%;
+   right: 5%;
+}
+
+
+.heading {
+   margin-top: 4rem;
+   gap: 1rem;
+   display: flex;
+   align-items: center;
+}
+
+
+.heading_text h1{
    font-family: 'Heading-font';
-   font-size: 5rem;
+   font-size: 10rem;
    margin-bottom: .5rem;
    margin-top: 0;
 }
 
-.heading p {
-   width: 50%;
+
+.img_head {
+   width: 70%;
 }
 
 
+
 .img_head h2 {
-   font-size: 4rem;
+   font-size: 2rem;
    position: absolute;
-   top: 45%;
+   top: 70%;
    left: 50%;
    transform: translate(-50%,-50%);
 }
 
 .img_head a {
    position: absolute;
-   top: 60%;
+   display: block;
+   top: 80%;
    left: 50%;
    transform: translate(-50%,0%);
    text-decoration: none;
    color: #000;
    font-size: 1.2rem;
-   padding: 1rem;
+   padding: .5rem;
    border-radius: 12px;
    border: 2px solid #000;
    /* background-color: lightblue; */
@@ -228,3 +267,155 @@
 .remove {
    display: flex;
 }
+
+.adv_wrapper {
+   margin-top: 4rem;
+   display: flex;
+   gap: 1rem;
+}
+
+.vid_adv {
+   width: 36.8%;
+}
+.vid_adv video {
+   width: 100%;
+}
+.adv_text {
+   position: relative;
+   width: 80%;
+   height: 100%;
+   margin-bottom: 4rem;
+}
+.adv_text h2 {
+   background-color: #014197;
+   color: #fff;
+   padding: .5rem;
+   font-family: 'Heading-font';
+   font-size: 3rem;
+   margin-top: 0;
+   margin-bottom: .5rem;
+}
+.adv_text img{
+   display: block;
+   width: 33.333%;
+}
+.adv_img {
+   display: flex;
+}
+
+.second_navbar {
+   width: auto;
+   margin-top: 2rem;
+   text-align: center;
+}
+.second_navbar ul {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+.second_navbar ul li {
+   display: inline-block;
+   margin-right: 2rem;
+}
+.second_navbar a {
+   display: block;
+   text-decoration: none;
+   color: #000;
+}
+
+
+
+.slideshow-container {
+
+   margin-top: 4rem;
+   width: 100%;
+
+   position: relative;
+
+ }
+
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(173, 216, 230, 0.8);
+ }
+
+
+
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+
+ /* Fading animation */
+ .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+ .image_container  {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    overflow: hidden;
+ }
+ .image_container img {
+   width: 33.33333%;
+
+ }
+
+ .btn-shop {
+   padding: 1rem 4rem;
+   transform: rotate(-25deg);
+   border-radius: 30px;
+   position: absolute;
+   top: 35%;
+   left: -10%;
+   text-decoration: none;
+   color: #fff;
+   background-color: #014197;
+ }
