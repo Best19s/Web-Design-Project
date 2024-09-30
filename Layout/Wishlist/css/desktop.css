@@ -41,8 +41,6 @@ section{
 .text_main{
     display: block;
     width: 100%;
-    /* border: 1px solid #000; */
-    /* margin-left: 20px; */
 }
 .header_box_main{
     width: 100%;
@@ -68,7 +66,6 @@ section{
     width: 100%; /* คงความกว้าง 100% */
 }
 .header_delete_main{
-    /* color: ; */
     width: 100%;
     margin-top: 40px;
 }

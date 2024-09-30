@@ -16,6 +16,7 @@
     }
     section{
         margin: 10px 20px;
+        min-width: 516px;
     }
     .main_content_1,.main_content_2,.main_content_3{
         display: block;
@@ -50,10 +51,11 @@
         
     }
     .box_product{
+        text-align: center;
         width:48%;
         /* padding: 50px;   */
-        border: 1px solid #000;
-        background-color: red; 
+        /* border: 1px solid #000; */
+
        
     }
     .buy_product_1{
@@ -64,6 +66,13 @@
     }
     .box_product{
         width: 48%;
+        min-height: 420px;
+        min-width: 252px;
+    }
+    .box_product img{
+        width: 48%;
+        min-height: 302px;
+        min-width: 252px;
     }
     .box_product_detail{
         width:31.33%;
@@ -73,12 +82,21 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 10px;
+        text-align: center;
+    }
+    .buy_product_2 .box_product_detail_1 img{
+        width: 100%;
+        height: auto;
+        min-width:160px ;
+        min-height:255px ;
+        max-height: 255.2;
     }
     .img_container{
         width: 100%;
         height: 100%;
         object-fit: cover;
         position: static;
+        top: 0px;
     }
     .image_section {
         width: 100%;
@@ -89,5 +107,32 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+     .buy_product_3{
+        display: flex;
+        justify-content: space-between;
+     }
+     .buy_product_3 .box_product{
+        width: 20.3%;
+     }
+
+     .buy_product_4 {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .box_product_detail_2 {
+        width: 30.5%; /* ขนาดกล่องเท่ากัน */
+    }
+    
+    .box_product_detail_2 img {
+        width: 100%; 
+        height: 255px;
+        object-fit: cover; /* ให้รูปภาพครอบเต็ม container โดยคงอัตราส่วน */
+        border-radius: 8px;
+    }
+    .main_content_4{
+        margin: 30px 0;
     }
 }

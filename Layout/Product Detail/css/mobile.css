@@ -18,7 +18,6 @@
     .main{
         margin: 0;
         padding: 20px;
-       /* background-color: royalblue; */
        min-width: 482px;
         min-height: 1523.8px;
         
@@ -29,7 +28,6 @@
     .box_content{
         width: 100%;
         display: block;
-        /* background-color: aquamarine; */
         
         
     }

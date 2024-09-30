@@ -15,4 +15,7 @@
   .img_box {
    display: none;
   }
+  footer {
+   display: none;
+  }
 }

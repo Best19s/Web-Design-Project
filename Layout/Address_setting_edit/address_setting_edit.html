@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Address Setting Edit</title>
+   <link rel="stylesheet" href="css/desktop.css">
+   <link rel="stylesheet" href="css/tablet.css">
+   <link rel="stylesheet" href="css/mobile.css">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+
+
+   <nav>
+
+      <div class="logo-brand">
+         <a href="">
+            <h2>Belle</h2>
+         </a>
+      </div>
+      <ul class="dropdown-1">
+
+         <li><a href="">Category</a>
+
+            <ul class="dropdown-2">
+               <li><a href="">Women</a>
+
+                  <ul class="dropdown-3">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Men</a>
+                  <ul class="dropdown-3" id="men-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Unisex</a>
+                  <ul class="dropdown-3" id="unisex-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Shoes</a>
+                  <ul class="dropdown-3" id="shoes-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Accessories</a>
+                  <ul class="dropdown-3" id="acc-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li><a href=""><span class="material-symbols-outlined">
+                  local_mall
+               </span></a></li>
+         <li><a href=""><span class="material-symbols-outlined">
+                  favorite
+               </span></a></li>
+         <li><a href=""><span class="material-symbols-outlined">
+                  account_circle
+               </span></a></li>
+      </ul>
+
+   </nav>
+   <div class="breadcrumb">
+      <ul class="breadcrumb_item">
+         <li>Home</li>
+         <li>Shopping Bag</li>
+      </ul>
+   </div>
+
+   <div class="btn-back"><a href="">Back</a></div>
+
+   <div class="container">
+
+      <h1>Address Setting Edit</h1>
+      <form action="/" method="post" class="form_addr">
+
+         <div class="name_setting">
+            <label for="name_setting">Name Address Setting: </label>
+            <input type="text" name="name_setting" id="name_setting">
+         </div>
+         <div class="name">
+            <div class="fname">
+               <label for="name">Name:</label>
+               <input type="text" name="name" id="name">
+            </div>
+            <div class="lname">
+               <label for="sname">Surname:</label>
+               <input type="text" name="sname" id="sname">
+            </div>
+         </div>
+         <div class="addr">
+            <label for="addr">Address:</label> <br>
+            <textarea name="addr" id="addr" rows="20" cols="10">
+
+            </textarea>
+         </div>
+         <div class="info">
+            <div class="province">
+               <label for="province">Provide:</label>
+               <input type="text" name="province" id="province">
+            </div>
+            <div class="district">
+               <label for="district">District:</label>
+               <input type="text" name="district" id="district">
+            </div>
+         </div>
+         <div class="info">
+            <div class="post_code">
+               <label for="post_code">Post Code:</label>
+               <input type="text" name="post_code" id="post_code">
+            </div>
+            <div class="city">
+               <label for="city">City:</label>
+               <input type="text" name="city" id="city">
+            </div>
+         </div>
+         <div class="phone">
+            <label for="code">Phone:</label>
+            <div class="phone_form">
+               <div class="code">
+                  <input type="text" name="code" id="code">
+               </div>
+               <input type="tel" name="tel" id="tel">
+            </div>
+         </div>
+         <input type="submit" value="Submit">
+      </form>
+   </div>
+
+
+</body>
+
+</html>
