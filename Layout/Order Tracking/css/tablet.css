@@ -13,7 +13,9 @@
         padding: 0;
         box-sizing: border-box;
     }
-
+    section{
+        margin: 20px 80px;
+    }
     .main{
         margin: 20px;
         margin-top: 50px;
@@ -21,6 +23,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 10px;
+        min-width: 305px;
         
     }
     .box_content{
