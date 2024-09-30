@@ -1,0 +1,75 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(desktop.css);
+@import url(tablet.css);
+
+@media screen and (width < 578px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    section{
+        margin:0;
+    }
+    .main{
+        margin: 20px;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .btn_addtobag{
+        display: block;
+        background-color: #0E6EB3;
+        text-align: center;
+       padding: 8px;
+       margin-top: 20px;
+       border-radius: 12px;
+       border: 1px solid #000;
+    }
+    .btn_addtobag a{
+        text-decoration: none;
+        color: white;
+    }
+    .wishlist-icon {
+        display: block;
+        position: absolute; /* ตั้งตำแหน่ง absolute ไว้บนรูป */
+        top: 20px;
+        right: 20px;
+        font-size: 40px; /* ปรับขนาดไอคอน */
+        color: black; /* ตั้งสีของไอคอน */
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px; /* ทำให้พื้นหลังเป็นวงกลม */
+        background-color: #ADD8E6;
+        
+    }
+    .wishlist-icon:hover {
+        transform: scale(1.2); 
+        transition: transform 0.2s ease-in-out; 
+        transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+    .box_content{
+        width:100%;
+        margin-bottom: 40px;
+        min-width:339.2px ;
+        min-height: 508.8px;
+    }
+    
+    .box_image_main{
+        width: 100%;
+        height: auto; /* หรือกำหนดความสูงตามต้องการ */
+        min-width: 214px;
+        min-height: 324px;
+    }
+    .box_image_main img{
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; /* ปรับให้รูปภาพขยายเต็ม container โดยคงสัดส่วน */
+    }
+}

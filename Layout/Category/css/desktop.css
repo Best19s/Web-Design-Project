@@ -1,0 +1,262 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(tablet.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 3000px; */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ADD8E6;
+    padding: 20px;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    
+}
+.content_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_header ul{
+    display: flex;
+    list-style-type: none;
+}
+.content_header ul li{
+    padding-right: 40px;
+}
+.content_header a{
+    text-decoration: none;
+    color: black;
+}
+.BEM{
+    position: sticky;
+    top: 81px;
+    z-index: 998;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    background-color: white;
+    margin: 0 80px;
+}
+.BEM ul{
+    display: flex;
+    list-style-type: none;
+}
+.BEM li{
+    margin-right: 40px;
+}
+.back{
+    position: sticky;
+    top: 143px;
+    z-index: 997;
+    border-bottom: 1px solid #000;
+    background-color: white;
+    padding: 10px ;
+    margin: 0 80px;
+}
+section {
+    /* width: calc(100% - 160px);  */
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 80px;
+}
+
+aside {
+    width: 30%;
+    /* background-color: #f34848; */
+    min-width: 388px;
+    min-height: 758px;
+}
+.main{
+    width: 70%;
+    padding-left: 20px;
+    /* margin-left: 20px; */
+    /* background-color: red; */
+}
+.search{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+.recommended_main{
+    width: 32%;
+    /* margin-left: 3%; */
+    /* justify-content: flex-start; */
+    margin-left:15px ;
+    
+}
+.recommended_main select {
+    width:100%; 
+    font-size: 17px;
+    border-radius: 12px;
+    border: 1px solid white;
+    padding: 10px 0;
+}
+
+.search-container {
+    /* width: 60%; */
+    display: inline-flex; /* เปลี่ยนเป็น inline-flex เพื่อจัดเรียง input และ button ในแถวเดียวกัน */
+    align-items: center; /* จัดให้ input และ button อยู่ตรงกลางในแนวตั้ง */
+    border: 2px solid #0E6EB3;
+    border-radius: 12px;
+}
+
+.search-container input[type=text] {
+    width:80%; 
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 12px 0 0 12px;
+    border: 1px solid white;
+}
+
+#btn_search {
+    width: 20%;
+    padding: 13px;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+    background-color: #0E6EB3;
+    color: white;
+    border: 1px solid white;
+}
+.input_search{
+    /* border: 1px solid #000; */
+}
+.content_main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box_content{
+    width: 31.3333333333%;
+}
+.box_content img{
+    width: 100%;
+    height: auto; 
+}
+.Filters{
+    position: sticky;
+    top: 142px;
+    z-index: 996;
+    
+}
+.box_filters{
+    border: 1px solid #000;
+    padding: 20px 20px 10px 20px;
+    background-color: #ADD8E6;
+    border-radius: 12px;
+}
+.box_filters h2{
+    margin: 0px 20px 20px 0;
+}
+.h1_Filters{
+    margin: 0px 0px 20px 20px;
+}
+.Filters .input_box select{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    
+}
+aside h1{
+    font-size: 1.5em;
+}
+.input_box label{
+    padding: 20px 0;
+}
+#size_input{
+    width: 100%;
+    height: auto;
+}
+.size_box{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.box_size button{
+    text-align: center;
+    border: 1px solid #000;
+    min-width: 50px; /* ความกว้างขั้นต่ำ */
+    margin: 5px 10px 5px 0; /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 30px; /* ปรับ padding ให้พอดี */
+    border-radius: 12px;
+    background-color:  #41C9E2; 
+    color: #333333; 
+    border-radius: 12px; 
+    cursor: pointer; 
+}
+.box_size button:hover {
+    background-color: #ACE2E1; /* เปลี่ยนพื้นหลังเมื่อ hover */
+}
+
+.box_size button:active {
+    background-color: #7695FF; /* เปลี่ยนพื้นหลังเมื่อ active */
+    color: #000; /* สีข้อความเมื่อ active */
+}
+
+.box_size button.selected {
+    background-color: #007bff; /* เปลี่ยนพื้นหลังเมื่อถูกเลือก */
+    color: white; /* สีข้อความเป็นสีขาว */
+    border-color: #007bff; /* เปลี่ยนสีขอบ */
+}
+.see_rang{
+    margin: 5px 0 20px 0;
+}
+.price_category{
+    margin: 20px 0;
+}
+.price_category h3{
+    margin-bottom: 20px;
+}
+.price_box{
+    display: flex;
+    justify-content: space-between;
+}
+.orderby_category h3{
+    margin-bottom: 20px;
+}
+/* ปรับขนาดของตัวเลื่อน */
+input[type="range"] {
+    -webkit-appearance: none; /* ปิดการตั้งค่าดั้งเดิม */
+    width: 100%; /* ความยาวของแถบ */
+    height: 2px; /* ความสูงของแถบ */
+    background: #1187ae; /* สีของแถบ */
+    border-radius: 5px; /* มุมโค้ง */
+    outline: none; /* เอาเส้นขอบออกเมื่อโฟกัส */
+    margin-top: 10px;
+}
+
+/* ปรับขนาดของปุ่มเลื่อน (thumb) สำหรับ Chrome */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* ปิดการตั้งค่าดั้งเดิม */
+    appearance: none;
+    width: 10px; /* กำหนดความกว้างของ thumb */
+    height: 10px; /* กำหนดความสูงของ thumb */
+    background: #ffffff; /* สีของ thumb */
+    border-radius: 50%; /* ทำให้ thumb เป็นวงกลม */
+    cursor: pointer; /* แสดง pointer เมื่อ hover */
+    border: 1px solid #000;
+}
+

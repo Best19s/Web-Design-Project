@@ -1,0 +1,137 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(tablet.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    padding: 20px;
+    max-width: 1088px;
+    max-height: 1569px;
+    margin: auto;
+}
+.container_main {
+    width: 100%;
+    margin: 20px 0px;
+    position: relative; /* กำหนดตำแหน่งของ container */
+    min-width: 532.8px;
+    min-height: 200px;
+    display: flex;
+    /* max-width: 1000px; */
+}
+
+.img_container {
+    /* margin-right: 40px; */
+    float: left;
+    width: 50%;
+    height: auto;
+   
+}
+
+.img_container img {
+    padding: 0 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text_container{
+    width: 50%;
+}
+.box_container {
+    text-align: center;
+    background-color: rebeccapurple;
+    position: absolute;
+    margin:0 20px;
+    width: 89.5%; /* ขยายกล่องข้อความให้ครอบคลุมรูป */
+    z-index: 2; /* ข้อความอยู่ชั้นบน */
+    color: white; /* ให้ข้อความอ่านง่าย */
+    padding: 20px; /* เพิ่ม padding */
+    bottom: 0;
+}
+.news_other{
+    margin: 100px 0;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+.news_other_box{
+    /* border: 1px solid #000; */
+    width: 32%;
+    
+}
+#news_other_box4{
+    display: none;
+}
+.img_news_other {
+    width: 100%;
+    height: 200px;
+}
+
+.img_news_other img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box_container{
+    display: none;
+}
+.footer_text{
+    /* border: 1px solid #000; */
+    margin-top: 30px;
+}
+.box_footer{
+    display: block;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+    min-width: 532.8px;
+    min-height: 200px;
+    gap: 10px;
+}
+.box_footer p{
+    margin: 10px 0;
+}
+.box_content_footer{
+    width: 24%;
+}
+.image_footer {
+    width: 100%;
+    height: auto;
+}
+
+.image_footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text_header_footer{
+    margin-bottom: 30px;
+}
+.box_content_footer{
+    display: block;
+}
+.text_header_footer{
+    text-align: center;
+}
+.btn_Read_shop{
+    margin-top: 40px;
+}
+.btn_Read_shop a{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: black;
+}
