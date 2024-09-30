@@ -1,0 +1,18 @@
+@media only screen and (max-width: 426px) {
+  .wrapper {
+   display: block;
+  }
+  .container {
+   padding: 0 1rem;
+  }
+  .step_wrapper {
+   width: 100%;
+   justify-content: center;
+  }
+  .step_wrapper p {
+   display: none;
+  }
+  .img_box {
+   display: none;
+  }
+}

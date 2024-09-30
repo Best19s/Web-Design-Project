@@ -1,0 +1,58 @@
+@media only screen and (max-width: 812px) {
+  footer {
+   display: none;
+  }
+  .second_navbar {
+   top: 10.4%;
+  }
+  .heading_text h1{
+   font-size: 4rem;
+  }
+
+  .img_head h2{
+   text-align: center;
+   width: 100%;
+   font-size: 1.5rem;
+   top: 50%;
+  }
+  .img_head a {
+   width: 50%;
+   text-align: center;
+   display: block;
+   top: 70%;
+  }
+  .card-container {
+   flex-direction: column;
+  }
+
+  .btn-shop {
+   position: relative;
+
+   padding: 1rem;
+   transform: rotate(0);
+   left: 0;
+   border-radius: 0;
+  }
+  .adv_img {
+   margin-top: 1rem;
+  }
+  .adv_text {
+   width: 100%;
+  }
+  .vid_adv {
+   width: 100%;
+  }
+  .adv_wrapper {
+   display: block;
+  }
+  .card {
+   width: 100%;
+  }
+  .box1 {
+   width: 100%;
+  }
+  .paragraph {
+   display: block;
+   columns: 2;
+  }
+}

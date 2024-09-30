@@ -1,11 +1,11 @@
 
 
 footer {
-   background-color: #0e6eb3;
+   background-color: #014197;
    color: #fff;
    display: flex;
    justify-content: space-between;
-   padding: 0 6%;
+   padding: 2% 6%;
 }
 .footer-info {
    width: 40%;
@@ -21,7 +21,11 @@ footer {
 
 .Social-icon {
    display: flex;
+
    gap: 1rem;
+}
+.Social-icon img {
+   width: 40px;
 }
 
 .copyright h4{
@@ -37,4 +41,9 @@ footer {
 .footer-menu-link {
    list-style-type: none;
    font-size: 1rem;
+}
+
+
+footer {
+   clear: both;
 }

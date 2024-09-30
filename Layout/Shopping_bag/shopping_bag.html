@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shopping Bag</title>
+   <link rel="stylesheet" href="css/desktop.css">
+   <link rel="stylesheet" href="css/mobile.css">
+   <link rel="stylesheet" href="css/tablet.css">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <nav>
+      <div class="logo-brand">
+         <a href="">
+            <h2>Belle</h2>
+         </a>
+      </div>
+      <ul class="dropdown-1">
+         <li><a href="">Home</a></li>
+         <li><a href="">Category</a>
+
+            <ul class="dropdown-2">
+               <li><a href="">Women</a>
+
+                  <ul class="dropdown-3">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Men</a>
+                  <ul class="dropdown-3" id="men-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Unisex</a>
+                  <ul class="dropdown-3" id="unisex-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Shoes</a>
+                  <ul class="dropdown-3" id="shoes-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Accessories</a>
+                  <ul class="dropdown-3" id="acc-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li><a href="">Shopping bags</a></li>
+         <li><a href="">Wishlist</a></li>
+         <li><a href="">Account</a></li>
+      </ul>
+   </nav>
+   <div class="breadcrumb">
+      <ul class="breadcrumb_item">
+         <li>Home</li>
+         <li>Shopping Bag</li>
+      </ul>
+   </div>
+
+   <div class="btn-back"><a href="">Back</a></div>
+
+   <div class="container">
+
+      <h1>Shopping Bag</h1>
+
+      <div class="payment">
+         <div class="total_wrapper">
+            <h2>Total 2 prices</h2>
+            <div class="box_shipment">
+               <div class="discount">
+                  <h4>Discount</h4>
+                  <a href="">Add</a>
+               </div>
+               <div class="list_item">
+                  <h4>List of Product</h4>
+                  <p>2 prices</p>
+               </div>
+               <div class="list_item_price">
+                  <p>1.Lorem ipsum dolo</p>
+                  <p>120$</p>
+               </div>
+               <div class="list_item_price">
+                  <p>2.Lorem ipsum dolo</p>
+                  <p>50$</p>
+               </div>
+               <div class="vat">
+                  <h4>Vat 7%</h4>
+                  <p>5$</p>
+               </div>
+               <div class="discount_price">
+                  <h4>Discount</h4>
+                  <p>0$</p>
+               </div>
+               <hr>
+               <div class="total_prices">
+                  <h2>Total Price</h2>
+                  <p>250$</p>
+               </div>
+               <div class="btn-link">
+                  <a href="">Continue Checkout</a>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="card_wrapper">
+         <div class="card_img">
+            <img src="../../img/men_shirt_2.jpg" alt="" width="100%">
+         </div>
+         <div class="card_info">
+            <div class="remove">
+               <h2>T-Shirt</h2>
+               <a href=""><span class="material-symbols-outlined">delete</span>Remove</a>
+            </div>
+            <p>simple t-shirt basic and comfortable</p>
+            <div class="prices">
+               <div class="price">
+                  <p class="before_sale">508$</p>
+                  <p class="after_sale">406.4$</p>
+               </div>
+               <p class="sales">Sale 20%</p>
+            </div>
+            <div class="color">
+               <label for="color">Color: </label>
+               <select name="color_in" id="color">
+                  <option value="">Cream</option>
+                  <option value="">White</option>
+                  <option value="">Beige</option>
+                  <option value="">Black</option>
+               </select>
+            </div>
+            <div class="size">
+               <label for="">Size: </label>
+               <select name="" id="">
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                  <option value="">XL</option>
+                  <option value="">XXL</option>
+               </select>
+            </div>
+            <div class="quantity">
+               <label for="">Quantity: </label>
+               <div class="stepperInput">
+                  <button class="button button--addOnLeft">-</button>
+                  <input type="text" placeholder="Age" value="0" class="input stepperInput__input" />
+                  <button class="button button--addOnRight">+</button>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="card_wrapper">
+         <div class="card_img">
+            <img src="../../img/men_shirt_3.jpg" alt="" width="100%">
+         </div>
+         <div class="card_info">
+            <div class="remove">
+               <h2>T-Shirt</h2>
+               <a href=""><span class="material-symbols-outlined">delete</span>Remove</a>
+            </div>
+            <p>simple t-shirt basic and comfortable</p>
+            <div class="prices">
+               <div class="price">
+                  <p class="before_sale">508$</p>
+                  <p class="after_sale">406.4$</p>
+               </div>
+               <p class="sales">Sale 20%</p>
+            </div>
+            <div class="color">
+               <label for="color">Color: </label>
+               <select name="color_in" id="color">
+                  <option value="">Cream</option>
+                  <option value="">White</option>
+                  <option value="">Beige</option>
+                  <option value="">Black</option>
+               </select>
+            </div>
+            <div class="size">
+               <label for="">Size: </label>
+               <select name="" id="">
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                  <option value="">XL</option>
+                  <option value="">XXL</option>
+               </select>
+            </div>
+            <div class="quantity">
+               <label for="">Quantity: </label>
+               <div class="stepperInput">
+                  <button class="button button--addOnLeft">-</button>
+                  <input type="text" placeholder="Age" value="0" class="input stepperInput__input" />
+                  <button class="button button--addOnRight">+</button>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+
+   </div>
+
+   <footer>
+
+      <div class="footer-info">
+         <div class="footer-head">
+            <h2>Belle</h2>
+            <p>Always Beautiful</p>
+         </div>
+         <div class="Social-icon">
+            <img src="/img/icon/Facebook.svg" alt="">
+            <img src="/img/icon/Google.svg" alt="">
+            <img src="/img/icon/Gmail.svg" alt="">
+            <img src="/img/icon/Instagram.svg" alt="">
+            <img src="/img/icon/TikTok.svg" alt="">
+         </div>
+         <div class="copyright">
+            <h4>© 2024 Belle.com All Rights Reserved.</h4>
+            <p>All content, including images, text, and designs, is the property of Belle.com and may not be reproduced
+               or distributed without permission.</p>
+         </div>
+      </div>
+
+      <div class="footer-menu">
+         <ul class="footer-menu-link">
+            <li>
+               <h4>Category</h4>
+            </li>
+            <li>Women</li>
+            <li>Men</li>
+            <li>Unisex</li>
+            <li>Shoes</li>
+            <li>Accessories</li>
+         </ul>
+         <ul class="footer-menu-link">
+            <li>
+               <h4>Account</h4>
+            </li>
+            <li>Setting</li>
+            <li>Order Tracking</li>
+            <li>Return</li>
+         </ul>
+         <ul class="footer-menu-link">
+            <li>
+               <h4>News & Promotion</h4>
+            </li>
+            <li>New Collection 2024</li>
+            <li>Best Selling 2024</li>
+            <li>News</li>
+         </ul>
+         <ul class="footer-menu-link">
+            <li>
+               <h4>Help Center</h4>
+            </li>
+            <li>FAQ+</li>
+            <li>Live Chat</li>
+            <li>Contact Us</li>
+         </ul>
+      </div>
+   </footer>
+
+   <script>
+      $('.stepperInput').each(function () {
+         var $stepperInput = $(this).find('input');
+
+         function incrementStepperInput(amount) {
+            var currentValue = parseInt($stepperInput.val()) || 0;
+            var newValue = currentValue + amount;
+            $stepperInput.val(Math.max(newValue, 0));
+         }
+
+         var stepperInputDecrement = $(this).find('button').first();
+         $(stepperInputDecrement).click(() => {
+            incrementStepperInput(-1);
+         });
+
+         var stepperInputIncrement = $(this).find('button').last();
+         $(stepperInputIncrement).click(() => {
+            incrementStepperInput(1);
+         });
+      });
+
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+@import url(../../../component/bread_crump/bread_crump.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(tablet.css);
+
+
+.menu {
+   background-color: #add8e6;
+   width: 30%;
+   padding: 1rem;
+   float: right;
+}
+.menu_body {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+.menu_body li a {
+   color: #000;
+   text-decoration: none;
+}
+
+.user {
+   background-color: #014197;
+   height: 500px;
+   margin-right: 35%;
+   padding: 1rem;
+}
+.user-logo {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: #014197;
+   margin-bottom: 1rem;
+}

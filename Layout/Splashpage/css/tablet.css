@@ -1,0 +1,33 @@
+@media only screen and (max-width: 767px) {
+   body {
+
+   }
+
+   nav .dropdown-1 {
+      display: none;
+   }
+   nav .hamburger_menu {
+      font-size: large;
+      margin-right: 1rem;
+   }
+   nav .logo-brand {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+   }
+
+   .wrapper:last-child {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   footer {
+      display: none;
+   }
+
+
+ }

@@ -1,0 +1,25 @@
+@media only screen and (max-width: 525px) {
+  .bg_fill {
+    position: relative;
+    float: none;
+    width: 100%;
+    opacity: 0.5;
+  }
+
+  .bg_fill img {
+    width: 100%;
+  }
+
+  .login_form_body {
+    /* min-width: fit-content; */
+    width: 80%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: inherit;
+  }
+  .social_logo {
+    gap: 2rem;
+    justify-content: center;
+  }
+}

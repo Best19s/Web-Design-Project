@@ -1,0 +1,28 @@
+.breadcrumb_item {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #add8e6;
+}
+.breadcrumb_item li {
+  display: inline-block;
+  color: #0e6eb3;
+  /* margin-right: 2rem; */
+}
+.breadcrumb_item li + li:before {
+  padding: 8px;
+  color: black;
+  content: ">";
+  color: #0e6eb3;
+}
+
+.btn-back {
+  margin-left: 5%;
+}
+.btn-back a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+}

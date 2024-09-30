@@ -4,8 +4,12 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Login</title>
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
    <link rel="stylesheet" href="css/desktop.css">
+   <link rel="stylesheet" href="css/mobile.css">
+   <link rel="stylesheet" href="css/tablet.css">
 </head>
 
 <body>
@@ -21,46 +25,88 @@
       </ul>
    </nav>
 
-
-   <div class="signup_wrapper">
-
-      <div class="bg_fill">
-         <img src="../../asset/img/login_img_bg.jpg" alt="">
-      </div>
-      <div class="signup_form_body">
+   <div class="bg_fill">
+      <img src="../../img/pic_login.jpg" alt="">
+   </div>
+   <div class="login_wrapper">
+      <div class="login_form_body">
          <h1>Login</h1>
          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, voluptatum?</p>
          <br>
          <form action="../Homepage/." method="get">
-            <label for="">Username: </label> <input type="text">
-            <label for="">Email: </label> <input type="email">
-            <label for="">Password: </label> <input type="password">
-            <label for="">Confirm Password: </label> <input type="password">
-            <label for="">Phone: </label><br>
-            <select name="" id="">
-               <option value="">(66+)</option>
-               <option value="">(66+)</option>
-               <option value="">(66+)</option>
-               <option value="">(66+)</option>
-               <option value="">(66+)</option>
-            </select>
-            <input type="tel" name="" id="phone">
-
-            <!-- <input type="submit" value="Sign Up"> -->
-            <div class="accept_terms_checkbox">
-               <h3><input type="checkbox" name="" id="checkbox">Acceptance of Terms</h3>
-               <p>You agree to comply with these terms and conditions, as well as any applicable laws and regulations.
-               </p>
+            <label for="username_in">Username: </label> <input type="text" name="username_in" placeholder="Username"
+               maxlength="25" required>
+            <!-- <label for="email_in">Email: </label> <input type="email" id="email" name="email_in" placeholder="example@gmail.com" required> -->
+            <div class="password">
+               <label for="password_in">Password: </label> <input type="password" placeholder="password" maxlength="20"
+                  id="password_in" class="pass" required>
+               <span class="material-symbols-outlined">
+                  visibility
+               </span>
+            </div>
+            <div class="remember">
+               <input type="checkbox" name="remember" id="remember_in"> <label for="remember_in">Keep me logged in</label>
             </div>
 
-            <input type="submit" value="Sign Up">
+
+            <input type="submit" value="Login">
+
+            <div class="other_login">
+               <p>or login with</p>
+            </div>
+
+            <div class="social_logo">
+               <img src="../../img/icon/Social Icons-1.png" alt="">
+               <img src="../../img/icon/Social Icons.png" alt="">
+               <img src="../../img/icon/Social Icons-2.png" alt="">
+               <img src="../../img/icon/Social Icons-3.png" alt="">
+            </div>
             <div class="login_link">
-               <p>Already have an account <span><a href="../Login/login.html">Login!</a></span></p>
+               <p>Don't have an account? <span><a href="../Login/login.html">Create Account!</a></span></p>
             </div>
          </form>
       </div>
 
+
    </div>
+
+
+
+   <script>
+      const btns = document.querySelectorAll('.material-symbols-outlined');
+      const passwords = document.querySelectorAll('.pass');
+
+      passwords.forEach((password, index) => {
+         const btn = btns[index]; // จับคู่ปุ่มกับช่องรหัสผ่าน
+
+         // แสดงปุ่มเมื่อเริ่มพิมพ์
+         password.addEventListener('input', () => {
+            if (password.value.length > 0) {
+               btn.style.display = 'inline'; // แสดงปุ่ม
+            } else {
+               btn.style.display = 'none'; // ซ่อนปุ่มถ้าไม่มีข้อความ
+            }
+         });
+
+         // เมื่อปุ่มถูกคลิก แสดงหรือซ่อนรหัสผ่าน
+         btn.addEventListener('click', () => {
+            if (password.type === 'password') {
+               password.type = 'text';
+               btn.textContent = 'visibility_off'; // เปลี่ยนไอคอนเมื่อแสดงรหัสผ่าน
+            } else {
+               password.type = 'password';
+               btn.textContent = 'visibility'; // เปลี่ยนไอคอนกลับเมื่อซ่อนรหัสผ่าน
+            }
+         });
+
+         // ซ่อนปุ่มเมื่อย้ายออกจากช่องรหัสผ่าน (ถ้าช่องว่าง)
+         password.addEventListener('blur', () => {
+            if (password.value.length === 0) {
+               btn.style.display = 'none'; // ซ่อนปุ่มเมื่อไม่มีข้อความ
+            }
+         });
+      });
+   </script>
 
 </body>
 
