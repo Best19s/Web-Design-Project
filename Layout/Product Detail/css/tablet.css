@@ -1,0 +1,57 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(desktop.css);
+
+@media screen and (min-width:578px) and (max-width:1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        box-sizing: border-box;
+    }
+    #image_2{
+        display:block;
+    }
+    .box_content{
+        display: block;
+    }
+   
+    .box_image_main {
+        min-width:410px;
+        min-height: 400px;
+        display: flex; /* ให้รูปต่อกันแนวนอน */
+        width: 100%; /* กำหนดความกว้างของกล่องที่ครอบรูปภาพ */
+        height: 400px; /* ความสูงของกรอบ */
+        overflow: hidden; /* ซ่อนรูปที่เกินขอบกล่อง */
+        gap: 20px;
+    }
+    
+    .box_image_main img {
+        width: 50%; /* กำหนดขนาดให้รูปครึ่งหนึ่งของกล่อง */
+        height: 100%; /* ความสูงเต็มกรอบ */
+        object-fit: cover; /* ทำให้รูปพอดีกับกรอบ */
+    }
+    #image_1, #image_2 {
+        height: auto; /* ลบความสูงที่กำหนด */
+    }
+    .text_main_box{
+        width: 60%;
+    }
+    .text_main {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* จัดเรียงในแนวตั้ง */
+        justify-content: center; /* จัดกลางในแนวตั้ง */
+        align-items: center; /* จัดกลางในแนวนอน */
+        padding: 0;
+        min-height: 400px; /* เพิ่มความสูงขั้นต่ำ */
+    }
+    
+}

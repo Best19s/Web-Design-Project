@@ -1,0 +1,159 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(tablet.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box_content{
+    display: flex;
+}
+.main{
+    margin:80px;
+}
+.box_image_main{
+    width: 50%;
+    height: 100%;
+    min-width: 500.6px;
+    min-height: 842.24px;
+}
+.box_image_main img{
+    width: 100%;
+    height: auto;
+}
+.text_main{
+    width: 50%;
+    padding-left: 25px;
+}
+.header_box_main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.price_content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.price_content_main{
+    display: flex;
+    justify-content: space-between;
+}
+.price_2_content{
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0E6EB3;
+    color: white;
+}
+#size_input{
+    width: 100%;
+    height: auto;
+}
+.size_box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.box_size button{
+    text-align: center;
+    border: 1px solid #000;
+    min-width: 50px; /* ความกว้างขั้นต่ำ */
+    margin: 5px 10px 5px 0; /* ระยะห่างระหว่างปุ่ม */
+    padding: 10px 30px; /* ปรับ padding ให้พอดี */
+    border-radius: 12px;
+    background-color:  white; 
+    color: #333333; 
+    border-radius: 12px; 
+    cursor: pointer; 
+}
+.box_size button:hover {
+    background-color: #ACE2E1; /* เปลี่ยนพื้นหลังเมื่อ hover */
+}
+
+.box_size button:active {
+    background-color: #7695FF; /* เปลี่ยนพื้นหลังเมื่อ active */
+    color: #000; /* สีข้อความเมื่อ active */
+}
+.box_size button.selected {
+    background-color: #0E6EB3; /* เปลี่ยนพื้นหลังเมื่อถูกเลือก */
+    color: white; /* สีข้อความเป็นสีขาว */
+    border-color: #007bff; /* เปลี่ยนสีขอบ */
+}
+.color-options{
+    margin: 20px 0;
+}
+.box_color{
+    display: flex;
+}
+.box_color_detail{
+    margin:20px 25px 20px 0;
+    border-radius: 50%;
+    padding: 13px;
+    border: 1px solid #000;
+}
+#box_color_1{
+    border: 1px solid #000;
+    background-color:#BED1FF ;
+}
+#box_color_2{
+    border: 1px solid #000;
+    background-color: #FFF6D6;
+}
+#box_color_3{
+    border: 1px solid #000;
+    background-color:#FFF2E3 ;
+}
+#box_color_4{
+    border: 1px solid #000;
+    background-color: white ;
+}
+.btn_Checkout{
+    display: block;
+    background-color: #0E6EB3;
+    text-align: center;
+   padding: 8px;
+   margin-top: 20px;
+   border-radius: 12px;
+   border: 1px solid #000;
+}
+.btn_Checkout a{
+    text-decoration: none;
+    color: white;
+}
+.btn_addtowishlist{
+    display: block;
+    background-color: white;
+    text-align: center;
+   padding: 8px;
+   margin-top: 20px;
+   border-radius: 12px;
+   border: 1px solid #000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.btn_addtowishlist a{
+    text-decoration: none;
+    color: black ;
+}
+.btn_addtowishlist b{
+    margin-left: 20px  ;
+}
+.text_product_detail{
+    margin: 60px 0;
+}
+.text_product_detail h3{
+    margin: 25px 0;
+}
+#image_2{
+    display: none;
+}

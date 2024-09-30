@@ -7,12 +7,10 @@
    width: 100%;
  }
 
- .image_off,
- .card:hover .image_on {
+ .image_off,.card:hover .image_on {
    display: none;
  }
 
- .image_on,
- .card:hover .image_off {
+ .image_on,.card:hover .image_off {
    display: block;
  }
