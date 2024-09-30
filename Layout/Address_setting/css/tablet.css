@@ -1,0 +1,22 @@
+@media only screen and (max-width: 767px) {
+  .box_wrapper {
+    display: block;
+    width: 100%;
+  }
+  .box_addr_default,
+  .box_addr {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 95%;
+  }
+  .edit span {
+    display: block;
+  }
+  .edit a {
+    display: none;
+  }
+  .btn_link a {
+   width: 96%;
+  }
+}

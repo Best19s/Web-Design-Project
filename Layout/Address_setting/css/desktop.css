@@ -1,0 +1,52 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+@import url(../../../component/bread_crump/bread_crump.css);
+
+
+
+.box_wrapper {
+   display: flex;
+   gap: 2rem;
+}
+.box_addr_default, .box_addr {
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #add8e6;
+   padding: 1.5rem;
+   border-radius: 12px;
+   border: 2px solid #000;
+}
+
+.box_addr {
+   background-color: #fff;
+}
+
+.edit {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.edit a {
+   color: #000;
+}
+
+.edit span {
+   display: none;
+}
+
+.btn_link a{
+   display: block;
+   width: 20%;
+   margin-top: 2rem;
+   border-radius: 12px;
+   text-align: center;
+   color: #fff;
+   padding: 1rem;
+   text-decoration: none;
+   background-color: #014197;
+
+}
