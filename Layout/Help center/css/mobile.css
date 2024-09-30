@@ -21,11 +21,9 @@
     section {
         margin: 10px;
         min-width: 335px;
-        /* min-height: 950px; */
     }
 
     .box_header {
-        /* border: 1px solid #000; */
         position: sticky;
     }
 
@@ -61,9 +59,11 @@
     }
 
     .box_footer {
-        margin-top: 20px;
+        margin: 20px 0;
     }
-
+    .box_footer h2 {
+        margin: 20px 0;
+    }
     #category {
         width: 100%;
         padding: 16px;
@@ -81,11 +81,6 @@
         font-size: 1.2em;
         margin-bottom: 40px;
     }
-
-    .btn_send_message {
-        /* background-color: #ADD8E6; */
-    }
-
     .btn_send_message a {
         display: flex;
         justify-content: center;

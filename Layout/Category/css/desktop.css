@@ -13,9 +13,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    /* height: 3000px; */
-}
 header {
     display: flex;
     justify-content: space-between;
@@ -50,33 +47,8 @@ header {
     text-decoration: none;
     color: black;
 }
-.BEM{
-    position: sticky;
-    top: 81px;
-    z-index: 998;
-    border-bottom: 1px solid #000;
-    padding: 20px;
-    background-color: white;
-    margin: 0 80px;
-}
-.BEM ul{
-    display: flex;
-    list-style-type: none;
-}
-.BEM li{
-    margin-right: 40px;
-}
-.back{
-    position: sticky;
-    top: 143px;
-    z-index: 997;
-    border-bottom: 1px solid #000;
-    background-color: white;
-    padding: 10px ;
-    margin: 0 80px;
-}
+
 section {
-    /* width: calc(100% - 160px);  */
     display: flex;
     box-sizing: border-box;
     margin: 0 80px;
@@ -84,15 +56,12 @@ section {
 
 aside {
     width: 30%;
-    /* background-color: #f34848; */
     min-width: 388px;
     min-height: 758px;
 }
 .main{
     width: 70%;
     padding-left: 20px;
-    /* margin-left: 20px; */
-    /* background-color: red; */
 }
 .search{
     display: flex;
@@ -101,8 +70,6 @@ aside {
 }
 .recommended_main{
     width: 32%;
-    /* margin-left: 3%; */
-    /* justify-content: flex-start; */
     margin-left:15px ;
     
 }
@@ -115,7 +82,6 @@ aside {
 }
 
 .search-container {
-    /* width: 60%; */
     display: inline-flex; /* เปลี่ยนเป็น inline-flex เพื่อจัดเรียง input และ button ในแถวเดียวกัน */
     align-items: center; /* จัดให้ input และ button อยู่ตรงกลางในแนวตั้ง */
     border: 2px solid #0E6EB3;
@@ -138,9 +104,6 @@ aside {
     background-color: #0E6EB3;
     color: white;
     border: 1px solid white;
-}
-.input_search{
-    /* border: 1px solid #000; */
 }
 .content_main{
     width: 100%;
@@ -180,7 +143,7 @@ aside {
     border-radius: 12px;
     
 }
-aside h1{
+aside h2{
     font-size: 1.5em;
 }
 .input_box label{

@@ -35,7 +35,6 @@
         color: black; /* ตั้งสีของไอคอน */
         cursor: pointer;
         border-radius: 2px 2px 2px 2px; /* ทำให้พื้นหลังเป็นวงกลม */
-        background-color: #ADD8E6;
         
     }
     .wishlist-icon:hover {
