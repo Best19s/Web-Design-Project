@@ -39,20 +39,37 @@
   background-color: #014197;
 }
 
-.credit_card h4 {
-  margin: 0;
-  margin-left: 1rem;
-  color: #fff;
-  font-size: 1.5rem;
+.bank , .paypal {
+   border-radius: 12px;
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #000;
+
+}
+.bank {
+   margin-top: 2rem;
 }
 
-.credit_card input {
-  transform: scale(1.8);
+.credit_card h4, .bank h4, .paypal h4 {
+  margin: 0;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.credit_card h4 {
+   color: #fff;
+}
+
+.credit_card input, .bank input, .paypal input {
+  transform: scale(1.4);
 }
 
 
 .name input,
 .num_card input {
+   box-sizing: border-box;
   width: 100%;
   padding: 0.5rem;
   border-radius: 12px;
@@ -91,6 +108,8 @@
 
 .bill textarea {
   width: 100%;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
 
 .payment_sum {
@@ -108,7 +127,7 @@
 }
 
 .order {
-  display: inline;
+  display: inline-block;
   width: 50%;
 }
 
@@ -213,4 +232,16 @@
 .after_sale {
    color: #0e6eb3;
    font-weight: bold;
+}
+
+.btn_link {
+   background-color: #014197;
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   padding: 1rem;
+   border-radius: 12px;
+   margin-bottom: 2rem;
+   text-align: center;
+   font-size: 1.2rem;
 }

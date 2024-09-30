@@ -25,18 +25,20 @@
    flex-direction: column;
   }
 
-  .btn-shop {
+  .btn-shop{
    position: relative;
-
    padding: 1rem;
    transform: rotate(0);
    left: 0;
    border-radius: 0;
+   display: block;
+   width: 95%;
   }
   .adv_img {
    margin-top: 1rem;
   }
   .adv_text {
+   text-align: center;
    width: 100%;
   }
   .vid_adv {

@@ -1,0 +1,38 @@
+@media only screen and (max-width: 426px) {
+   .wrapper {
+    display: block;
+   }
+   .container {
+    padding: 0 1rem;
+   }
+   .step_wrapper {
+    width: 100%;
+    justify-content: center;
+   }
+   .step_wrapper p {
+    display: none;
+   }
+   .payment_sum {
+      float: none;
+      width: 92%;
+      margin: 1rem;
+   }
+   .payment_method {
+      float: none;
+      width: 92%;
+   }
+   .payment_sum_body {
+      display: block;
+   }
+
+   .info {
+      border-right: none;
+   }
+   .order {
+      width: 90%;
+      /* padding: 1rem; */
+   }
+   footer {
+    display: none;
+   }
+ }
