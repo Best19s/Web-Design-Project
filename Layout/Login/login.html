@@ -4,10 +4,12 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Login</title>
    <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
    <link rel="stylesheet" href="css/desktop.css">
+   <link rel="stylesheet" href="css/mobile.css">
+   <link rel="stylesheet" href="css/tablet.css">
 </head>
 
 <body>
@@ -23,6 +25,9 @@
       </ul>
    </nav>
 
+   <div class="bg_fill">
+      <img src="../../img/pic_login.jpg" alt="">
+   </div>
    <div class="login_wrapper">
       <div class="login_form_body">
          <h1>Login</h1>
@@ -45,20 +50,27 @@
 
 
             <input type="submit" value="Login">
+
+            <div class="other_login">
+               <p>or login with</p>
+            </div>
+
+            <div class="social_logo">
+               <img src="../../img/icon/Social Icons-1.png" alt="">
+               <img src="../../img/icon/Social Icons.png" alt="">
+               <img src="../../img/icon/Social Icons-2.png" alt="">
+               <img src="../../img/icon/Social Icons-3.png" alt="">
+            </div>
             <div class="login_link">
                <p>Don't have an account? <span><a href="../Login/login.html">Create Account!</a></span></p>
             </div>
-
-            <p>or login with</p>
-
          </form>
       </div>
 
 
-      <div class="bg_fill">
-         <img src="../../img/pic_login.jpg" alt="">
-      </div>
    </div>
+
+
 
    <script>
       const btns = document.querySelectorAll('.material-symbols-outlined');

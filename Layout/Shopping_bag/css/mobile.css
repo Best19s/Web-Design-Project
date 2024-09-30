@@ -1,0 +1,46 @@
+@media only screen and (max-width: 426px) {
+
+
+   .total_wrapper {
+      /* display: none; */
+      width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+   }
+
+   .card_wrapper {
+      display: block;
+      /* flex-direction: column; */
+      width: 100%;
+   }
+   .container {
+      padding: 0 1rem;
+   }
+   .card_img {
+      width: 100%;
+   }
+   .card_img img {
+      width: 100%;
+   }
+   .card_info {
+      width: 100%;
+      margin: 0;
+   }
+   .remove {
+      margin-top: 1rem;
+   }
+   .color, .size {
+      flex-direction: column;
+   }
+   .color select, .size select {
+      width: 100%;
+   }
+   .size {
+      margin-top: 1rem;
+   }
+
+   footer {
+      display: none;
+   }
+
+}

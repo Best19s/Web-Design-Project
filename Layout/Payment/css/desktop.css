@@ -8,24 +8,25 @@
 @import url(mobile.css);
 @import url(tablet.css);
 
-.payment {
-
-}
 .payment h1 {
    text-align: center;
 }
 .step_wrapper {
    display: flex;
-
-   /* width: 50%; */
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
    gap: 5rem;
    text-align: center;
-   justify-content: center;
+   justify-content: space-between;
 }
 
 form {
-   margin: 1rem 15rem;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
    padding: 1rem;
+
 }
 
 input, select {
@@ -35,6 +36,8 @@ input, select {
    border-radius: 12px;
    border: 1px solid #000;
    outline-color: lightblue;
+   font-family: 'Text-Font';
+   font-size: 1rem;
 }
 
 .addr label, .label_head {
@@ -46,7 +49,7 @@ input, select {
    color: #000;
    margin: 1rem 0;
    display: block;
-   width: 15%;
+   width: fit-content;
    text-align: center;
    padding: .5rem;
    border-radius: 12px;
@@ -71,10 +74,10 @@ input, select {
    gap: 1rem;
 }
 #city {
-   width: 12%;
+   width: 15%;
 }
 #phon {
-   width: 88%;
+   width: 90%;
 }
 
 .name {
@@ -88,7 +91,12 @@ input, select {
 .btn-link {
    margin-top: 2rem;
    font-size: 1.2rem;
+   cursor: pointer;
    font-family: 'Text-Font';
-   color: #fff;
-   background-color: #0e6eb3;
+   color: #000;
+   background-color: #add8e6;
+}
+
+.step1 {
+   color: #014197;
 }

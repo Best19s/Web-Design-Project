@@ -3,7 +3,6 @@
 body {
   margin: 0;
   font-family: "Text-font";
-  /* min-width: 500px; */
   box-sizing: border-box;
   min-width: 400px;
   max-width: 2000px;

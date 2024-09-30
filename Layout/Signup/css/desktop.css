@@ -34,6 +34,7 @@ label {
 }
 input {
   font-family: "Text-font";
+  font-size: 1rem;
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #000;
@@ -45,12 +46,14 @@ input[type="submit"] {
   font-weight: bold;
   margin-top: 2rem;
   background-color: lightblue;
-  padding: 1rem;
+  padding: .5rem;
   font-size: 1.5rem;
   border-radius: 12px;
   border: 2px solid #000;
   cursor: pointer;
 }
+
+
 input:focus,
 select:focus {
   border-color: lightblue;
@@ -77,6 +80,7 @@ select:focus {
   width: auto;
   margin-right: 1rem;
   outline: none;
+  transform: scale(1.5);
 }
 
 .accept_terms_checkbox h3 {
