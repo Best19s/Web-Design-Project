@@ -1,3 +1,11 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(tablet.css);
 
 * {
     margin: 0;
@@ -88,26 +96,55 @@ section {
     font-size: 1.3em;
     border-radius: 12px;
 }
-
-/* ซ่อนไอคอนเดิมของ details */
-details summary {
-    list-style: none;
-    /* ปิดไอคอนเริ่มต้น */
+.container{
+    margin: 0 80px;
+}
+.faq-list {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ans {
+    max-height: 0;
+    width: 100%;
+    padding: 0 5px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.faq {
+    margin-top: 10px;
+}
+.ques {
+    width: 100%;
+    border: 1px solid #000;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
-    /* เปลี่ยนลูกศรเป็นรูปมือเมื่อ hover */ 
-}
+    transition: all .3s ease-in-out;
+    border-radius: 12px;
 
-/* เพิ่มไอคอนก่อน summary (ปิดอยู่) */
-details summary::before {
-    content: "+ ";
-    /* ไอคอนเมื่อปิด (ใช้ Unicode หรือตัวอักษรพิเศษ) */
-    font-size: 16px;
-    margin-right: 5px;
-    /* ระยะห่างระหว่างไอคอนและข้อความ */
+} 
+.ques:hover {
+    background-color: white;
 }
-
-/* เปลี่ยนไอคอนเมื่อเปิด */
-details[open] summary::before {
-    content: "- ";
-    /* ไอคอนเมื่อเปิด (เปลี่ยนจากลูกศรชี้ขวาเป็นชี้ลง) */
+.faq i {
+    transition: all .3s ease-in-out;
+}
+.faq.active .ans {
+    max-height: 300px;
+}
+.faq.active i {
+    transform: rotate(45deg);
+}
+.ans p {
+border-radius: 0 0 12px 12px;
+background-color: #ADD8E6;
+padding: 20px;
+font-size: 14px;
+border-top: 1px solid #000;
+}
+.container h1{
+    margin-bottom: 20px;
 }

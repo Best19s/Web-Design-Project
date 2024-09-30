@@ -24,7 +24,7 @@
     aside {
        display: none; 
     }
-    main {
+    .main {
         padding: 20px;
         width: 100%;
     }
@@ -45,7 +45,7 @@
         display: none;
     }
     body{
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     /* ปรับ search ให้อยู่บน */

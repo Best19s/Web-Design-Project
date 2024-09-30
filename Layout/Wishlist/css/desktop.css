@@ -15,7 +15,7 @@
 section{
     margin: 20px 80px;
 }
-main{
+.main{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;

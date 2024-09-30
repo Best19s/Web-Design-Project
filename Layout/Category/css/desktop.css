@@ -84,11 +84,11 @@ section {
 
 aside {
     width: 30%;
-    background-color: #f34848;
+    /* background-color: #f34848; */
     min-width: 388px;
     min-height: 758px;
 }
-main{
+.main{
     width: 70%;
     padding-left: 20px;
     /* margin-left: 20px; */

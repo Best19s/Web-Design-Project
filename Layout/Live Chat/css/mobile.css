@@ -1,0 +1,140 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(desktop.css);
+@import url(tablet.css);
+
+@media screen and (max-width: 578px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .chat_section{
+        min-width:500px ;
+        min-height:598px ;
+    }
+    /* กล่องข้อความ */
+    .box_chat p {
+        width: auto; /* ปรับความกว้างตามเนื้อหา */
+        height: auto; /* ปรับความสูงตามเนื้อหา */
+        padding: 10px 20px; /* กำหนดระยะห่างภายใน */
+        word-wrap: break-word; /* ถ้ามีข้อความยาวจะตัดคำขึ้นบรรทัดใหม่ */
+        max-width: 70%; /* จำกัดความกว้างไม่เกิน 70% ของหน้าจอ */
+        border-radius: 20px; /* ปรับขอบมน */
+        background-color: #f0f0f0; /* สีพื้นหลัง */
+        margin: 10px 0; /* เพิ่มระยะห่างระหว่างข้อความ */
+    }
+
+    /* รูปโปรไฟล์และข้อความ */
+    .profile {
+        display: flex;
+        align-items: center;
+        border-radius: 30px 30px 30px 0px;
+        padding: 10px;
+    }
+
+    .profile .image_chat img {
+        width: 60px; /* ปรับขนาดให้เล็กลงบนหน้าจอมือถือ */
+        height: 60px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    .profile p {
+        word-break: break-word;
+        color: black;
+    }
+
+    /* จัดข้อความฝั่งผู้ใช้ */
+    #box_chat_2, #box_chat_4 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #box_chat_2 p, #box_chat_4 p {
+        /* padding-right: 30px; */
+        margin-right: 20px;
+        background-color: rgb(212, 172, 250);
+        border-radius: 30px 30px 0px 30px;
+        max-width: 60%;
+    }
+
+    /* กล่องข้อความส่ง */
+    .chat_input {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #fff;
+        /* border-radius: 25px; */
+        margin: 10px 0px 0 0px;
+    }
+
+    .chat_input input {
+        flex: 1; /* ให้ input ขยายเต็มพื้นที่ */
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .attach_icon, .send_icon {
+        font-size: 20px;
+        color: #888;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    .attach_icon:hover, .send_icon:hover {
+        color: #000; /* เปลี่ยนสีเมื่อ hover */
+    }
+
+     /* ปุ่มเปิด/ปิดแชท */
+     .chatbot-toggler {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        z-index: 1000; /* ทำให้ปุ่มอยู่ด้านบนสุด */
+    }
+
+    /* หน้าจอแชทที่ถูกซ่อน */
+    .chat_section {
+        display: none;
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid #ccc;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    .chat_section h1{
+        padding: 20px;
+        color: white;
+        text-align: center;
+        background-color: #007bff;
+    }
+    /* เมื่อแชทถูกเปิด */
+    .chat_section.show-chat {
+        display: block;
+    }
+
+    /* สไตล์ไอคอน */
+    .bi {
+        font-size: 24px;
+    }
+}
