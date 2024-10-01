@@ -1,82 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/desktop.css">
-    <link rel="stylesheet" href="css/tablet.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
-    <section>
-        <div class="container">
-            <h1>FAQ</h1>
-            <div class="faq-list">
-                <div class="faq">
-                    <div class="ques">
-                        <p>What payment methods do you accept?</p>
-                        <i class="bi bi-plus-circle"></i>
-                    </div>
-                    <div class="ans">
-                        <p>We accept a variety of payment methods, including credit/debit cards (Visa, MasterCard, AMEX), PayPal, and other secure online payment gateways.</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="faq-list">
-                <div class="faq">
-                    <div class="ques">
-                        <p>What is your return and exchange policy?</p>
-                        <i class="bi bi-plus-circle"></i>
-                    </div>
-                    <div class="ans">
-                        <p>We accept a variety of payment methods, including credit/debit cards (Visa, MasterCard, AMEX), PayPal, and other secure online payment gateways.</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="faq-list">
-                <div class="faq">
-                    <div class="ques">
-                        <p>What should I do if I receive the wrong or damaged item?</p>
-                        <i class="bi bi-plus-circle"></i>
-                    </div>
-                    <div class="ans">
-                        <p>We accept a variety of payment methods, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati qui repellat dicta accusantium libero. Error veniam sed numquam minus repellendus obcaecati quis iusto inventore laboriosam molestiae, soluta iure deserunt, debitis libero? Nostrum reiciendis eligendi accusantium dicta soluta ipsa labore cupiditate obcaecati optio vel, rem harum eius laudantium, neque, suscipit nemo.including credit/debit cards (Visa, MasterCard, AMEX), PayPal, and other secure online payment gateways.</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="faq-list">
-                <div class="faq">
-                    <div class="ques">
-                        <p>How do I choose the right size?</p>
-                        <i class="bi bi-plus-circle"></i>
-                    </div>
-                    <div class="ans">
-                        <p>We accept a variety of payment methods, including credit/debit cards (Visa, MasterCard, AMEX), PayPal, and other secure online payment gateways.</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="box_footer">
-                <h2>Contact Us</h2>
-            
-                <!-- ส่วนของ select -->
-               
-                <select id="category" name="category">
-                    <option value="general">Select Topic</option>
-                    <option value="feedback">ข้อเสนอแนะ</option>
-                    <option value="inquiry">สอบถามข้อมูล</option>
-                    <option value="complaint">ร้องเรียน</option>
-                </select>
-                <textarea id="message" name="message" rows="10" cols="50" >Type here......</textarea><br>
-            
-                <!-- ปุ่มส่งฟอร์ม -->
-                <div class="btn_send_message">
-                    <a href="#">Send message</a>
-                </div>
-            </div>  
-        </div>
 
-    </section>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/desktop.css">
+   <link rel="stylesheet" href="css/tablet.css">
+   <link rel="stylesheet" href="css/mobile.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+   <nav>
+
+      <div class="logo-brand">
+         <a href="../Homepage/homepage.html">
+            <h2>Belle</h2>
+         </a>
+      </div>
+      <ul class="dropdown-1">
+
+         <li><a href="../Category/category.html">Category</a>
+
+            <ul class="dropdown-2">
+               <li><a href="">Women</a>
+
+                  <ul class="dropdown-3">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Men</a>
+                  <ul class="dropdown-3" id="men-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Unisex</a>
+                  <ul class="dropdown-3" id="unisex-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Shoes</a>
+                  <ul class="dropdown-3" id="shoes-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+               <li><a href="">Accessories</a>
+                  <ul class="dropdown-3" id="acc-menu">
+                     <li><a href="">Show All</a></li>
+                     <li><a href="">Tops</a></li>
+                     <li><a href="">Coats</a></li>
+                     <li><a href="">Dress</a></li>
+                     <li><a href="">Jeans</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li><a href="../Shopping_bag/shopping_bag.html"><span class="material-symbols-outlined">
+                  local_mall
+               </span></a></li>
+         <li><a href="../Wishlist/wishlist.html"><span class="material-symbols-outlined">
+                  favorite
+               </span></a></li>
+         <li><a href="../Account/account.html"><span class="material-symbols-outlined">
+                  account_circle
+               </span></a></li>
+      </ul>
+
+   </nav>
+   <section>
+      <div class="container">
+         <h1>FAQ</h1>
+         <div class="faq-list">
+            <div class="faq">
+               <div class="ques">
+                  <p>What payment methods do you accept?</p>
+                  <i class="bi bi-plus-circle"></i>
+               </div>
+               <div class="ans">
+                  <p>We accept a variety of payment methods, including credit/debit cards (Visa, MasterCard, AMEX),
+                     PayPal, and other secure online payment gateways.</p>
+               </div>
+            </div>
+         </div>
+         <div class="faq-list">
+            <div class="faq">
+               <div class="ques">
+                  <p>What is your return and exchange policy?</p>
+                  <i class="bi bi-plus-circle"></i>
+               </div>
+               <div class="ans">
+                  <p>We accept a variety of payment methods, including credit/debit cards (Visa, MasterCard, AMEX),
+                     PayPal, and other secure online payment gateways.</p>
+               </div>
+            </div>
+         </div>
+         <div class="faq-list">
+            <div class="faq">
+               <div class="ques">
+                  <p>What should I do if I receive the wrong or damaged item?</p>
+                  <i class="bi bi-plus-circle"></i>
+               </div>
+               <div class="ans">
+                  <p>We accept a variety of payment methods, Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Obcaecati qui repellat dicta accusantium libero. Error veniam sed numquam minus repellendus
+                     obcaecati quis iusto inventore laboriosam molestiae, soluta iure deserunt, debitis libero? Nostrum
+                     reiciendis eligendi accusantium dicta soluta ipsa labore cupiditate obcaecati optio vel, rem harum
+                     eius laudantium, neque, suscipit nemo.including credit/debit cards (Visa, MasterCard, AMEX),
+                     PayPal, and other secure online payment gateways.</p>
+               </div>
+            </div>
+         </div>
+         <div class="faq-list">
+            <div class="faq">
+               <div class="ques">
+                  <p>How do I choose the right size?</p>
+                  <i class="bi bi-plus-circle"></i>
+               </div>
+               <div class="ans">
+                  <p>We accept a variety of payment methods, including credit/debit cards (Visa, MasterCard, AMEX),
+                     PayPal, and other secure online payment gateways.</p>
+               </div>
+            </div>
+         </div>
+         <div class="box_footer">
+            <h2>Contact Us</h2>
+
+            <!-- ส่วนของ select -->
+
+            <select id="category" name="category">
+               <option value="general">Select Topic</option>
+               <option value="feedback">ข้อเสนอแนะ</option>
+               <option value="inquiry">สอบถามข้อมูล</option>
+               <option value="complaint">ร้องเรียน</option>
+            </select>
+            <textarea id="message" name="message" rows="10" cols="50">Type here......</textarea><br>
+
+            <!-- ปุ่มส่งฟอร์ม -->
+            <div class="btn_send_message">
+               <a href="#">Send message</a>
+            </div>
+         </div>
+      </div>
+
+   </section>
 </body>
+
 </html>
