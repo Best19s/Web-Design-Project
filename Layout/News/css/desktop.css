@@ -66,7 +66,6 @@ section{
 
 }
 .news_other_box{
-    /* border: 1px solid #000; */
     width: 32%;
     
 }
@@ -87,13 +86,13 @@ section{
     display: none;
 }
 .footer_text{
-    /* border: 1px solid #000; */
     margin-top: 30px;
 }
 .box_footer{
     display: block;
     padding: 20px;
-    background-color: black;
+    background-color: #ADD8E6;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -133,5 +132,10 @@ section{
 .btn_Read_shop a{
     margin-bottom: 20px;
     font-size: 1.2em;
-    color: black;
+    text-decoration: none;
+    background-color: #0E6EB3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+
 }

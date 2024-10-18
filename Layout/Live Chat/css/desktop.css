@@ -13,16 +13,37 @@
     box-sizing: border-box;
 }
 
+/* กำหนดส่วนแชทให้ขยายเต็มหน้าจอ */
+section.chat_section {
+    margin: 30px 80px; /* ใช้ margin ด้านข้างเท่านั้น */
+    width: calc(100% - 160px); /* ลดความกว้างเพื่อให้รวมกับ padding */
+    height: auto; /* ใช้ auto เพื่อให้เนื้อหาขยายตามขนาด */
+    border: 1px solid #141212;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.chat_section h1 {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: #007bff;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
 /* กล่องข้อความ */
 .box_chat p {
-    width: auto; /* ปรับความกว้างตามเนื้อหา */
-    height: auto; /* ปรับความสูงตามเนื้อหา */
-    padding: 10px 20px; /* กำหนดระยะห่างภายใน */
-    word-wrap: break-word; /* ถ้ามีข้อความยาวจะตัดคำขึ้นบรรทัดใหม่ */
-    max-width: 70%; /* จำกัดความกว้างไม่เกิน 70% ของหน้าจอ */
-    border-radius: 20px; /* ปรับขอบมน */
-    background-color: #f0f0f0; /* สีพื้นหลัง */
-    margin: 10px 0; /* เพิ่มระยะห่างระหว่างข้อความ */
+    width: 45%;
+    max-width: 45%; 
+    height: auto; /* แก้เป็น auto เพื่อให้ข้อความขยายตามเนื้อหา */
+    padding: 10px 20px; 
+    word-wrap: break-word; 
+    border-radius: 20px; 
+    background-color: #f0f0f0;
+    margin: 10px 0;
 }
 
 /* รูปโปรไฟล์และข้อความ */
@@ -32,13 +53,15 @@
     border-radius: 30px 30px 30px 0px;
     padding: 10px;
 }
-.profile .image_chat{
+
+.profile .image_chat {
     width: 60px;
     height: 60px;
     margin-right: 10px;
 }
+
 .profile .image_chat img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 50%;
     background-color: red;
@@ -50,28 +73,32 @@
 }
 
 /* จัดข้อความฝั่งผู้ใช้ */
-#box_chat_2, #box_chat_4 {
+.box_chat_2, #box_chat_4 {
     display: flex;
     justify-content: flex-end;
 }
 
-#box_chat_2 p, #box_chat_4 p {
-    margin-right: 20px;
+.box_chat_2 p, #box_chat_4 p {
+    margin-right: 10px;
     background-color: rgb(212, 172, 250);
     border-radius: 30px 30px 0px 30px;
-    max-width: 60%;
+    max-width: 40%;
 }
 
 /* กล่องข้อความส่ง */
 .chat_input {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
     padding: 10px;
     background-color: #fff;
-    margin: 10px 0px 0 0px;
+    width: 100%; /* ขยายเต็มพื้นที่ */
+    position: sticky; 
+    bottom: 0; /* ให้อยู่ด้านล่างสุด */
+    left: 0; /* เริ่มที่ด้านซ้ายสุด */
+    z-index: 10000; /* ให้อยู่ด้านบนสุดของเนื้อหาอื่นๆ */
+    border-radius: 0 0 10px 10px;
 }
-
 .chat_input input {
     flex: 1; /* ให้ input ขยายเต็มพื้นที่ */
     border: none;
@@ -91,49 +118,16 @@
     color: #000; /* เปลี่ยนสีเมื่อ hover */
 }
 
- /* ปุ่มเปิด/ปิดแชท */
- .chatbot-toggler {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    z-index: 1000; /* ทำให้ปุ่มอยู่ด้านบนสุด */
-}
-
-/* หน้าจอแชทที่ถูกซ่อน */
-.chat_section {
-    display: none;
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    width: 100%;
-    max-width: 1000px;
-    border: 1px solid #ccc;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-}
-.chat_section h1{
-    padding: 20px;
-    color: white;
-    text-align: center;
-    background-color: #007bff;
-}
-/* เมื่อแชทถูกเปิด */
-.chat_section.show-chat {
-    display: block;
-}
-/* สไตล์ไอคอน */
-.bi {
-    font-size: 24px;
-}
-.profile .image_chat{
+/* รูปโปรไฟล์ */
+.profile .image_chat {
     border: 1px solid #000;
     border-radius: 50%;
+}
+
+/* ยกเลิกการใช้ sticky */
+.header_h1 {
+    position: static; /* เปลี่ยนเป็น static แทน sticky */
+}
+.chat_main{
+    padding: 20px 80px;  /* ใช้ padding แทน margin */
 }

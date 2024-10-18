@@ -15,7 +15,7 @@
         box-sizing: border-box;
     }
     section {
-        margin: 0 80px;
+        margin: 0 40px;
     }
 
     aside {
@@ -33,6 +33,11 @@
     }
     .box_content {
         width: 47.5%;
+
+
+    }
+    .box_content img{
+        min-height: 180.9px;
     }
     .BEM{
         display: none;

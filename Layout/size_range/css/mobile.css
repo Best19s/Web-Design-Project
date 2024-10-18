@@ -1,0 +1,84 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(desktop.css);
+@import url(tablet.css);
+
+@media screen and (max-width: 632px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        min-width: 591.2px;
+        min-height: 1727.4px;
+    }
+    section{
+        padding: 30px;
+        display: block;
+    }
+    .container_table{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .image_1{
+        display: none;
+    }
+    .image_2{
+        display: none;
+    }
+    .section_2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .section_2_image_1{
+    }
+    .section_2_image_2{
+    }
+    .main_detail{
+        display: block;
+        margin-top: 10px;
+    }
+    .text_detail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper{
+        width: 100%;
+        display: block;
+    }
+    .text_main1 {
+        width: 100%;
+        padding: 40px;
+        line-height: 2;
+    }
+    .text_main1_1{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .text_main2{
+        width: 100%;
+        padding: 40px;
+        line-height: 2;
+    }
+    .text_main2_1 {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image_main_detail{
+        margin: 0 auto;
+    }
+}

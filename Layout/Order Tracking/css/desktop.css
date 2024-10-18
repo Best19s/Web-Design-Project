@@ -67,10 +67,17 @@ section{
 .size-options{
     display: flex;
     justify-content: start;
+    margin-right: 20px;
+}
+.size-options p{
+    margin-right: 20px;
 }
 .color-options{
     display: flex;
     justify-content: start;
+}
+.color-options p{
+    margin-right: 10px;
 }
 .header_box_main h2{
     margin-bottom: 10px;

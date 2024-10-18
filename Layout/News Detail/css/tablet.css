@@ -7,7 +7,7 @@
 @import url(mobile.css);
 @import url(desktop.css);
 
-@media screen and (min-width:578px) and (max-width:907px){
+@media screen and (min-width:578px) and (max-width:1024px){
     *{
         margin: 0;
         padding: 0;
@@ -59,6 +59,7 @@
         top: 0;
     }
     .buy_product_1{
+      margin: 40px 0;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -69,7 +70,6 @@
     }
     .box_product{
         text-align: center;
-        width:48%;
         
     }
    .box_image_poster{
@@ -93,9 +93,9 @@
     }
     .buy_product_4{
         gap: 10px;
-    }
-    .box_product_detail_1{
-
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .box_product_detail_1 img{
         width: 100%;    
@@ -114,4 +114,36 @@
     .buy_product_2{
         text-align: center;
     }
+    .box_product{
+      width: 50%;
+      height: 50%;
+      min-width: 200px;
+      min-height: 450px;
+      max-width:350px ;
+      max-height: 420px;
+  }
+  .box_product img{
+      width: 100%;
+      height: auto; 
+      max-width:253.44px ;
+      min-height: 302px;
+      max-height: 302px;
+      object-fit: cover; /* ปรับให้รูปภาพขยายเต็ม container โดยคงสัดส่วน */
+  
+  }
+  .box_product_detail_2{
+    width: 49%;
+    /* max-width:none ;
+    max-height: none; */
+    min-height: 480px;
+  }
+  .box_product_detail_2 img{
+    min-width: 150px;
+    min-height: 200px;
+    max-width:250px ;
+    max-height: 290px;
+  }
+  #box_product_detail_2_2{
+    display: none;
+  }
 }
