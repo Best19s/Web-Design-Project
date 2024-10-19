@@ -17,11 +17,11 @@
     body{
         min-width: 320px; 
     }
-    section{   
+    .section{   
         margin: 0;
         display: block;
     }
-    aside {
+    .aside {
        display: none; 
     }
     .main {

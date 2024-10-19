@@ -34,7 +34,7 @@ p{
 .h1_header h1{
     font-size: 1.8em;
 }
-section{
+.section{
     padding: 30px;
     display: flex;
     justify-content: space-between;
