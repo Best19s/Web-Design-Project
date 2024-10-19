@@ -13,6 +13,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+input, select {
+    font-family: "Text-font";
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +26,16 @@ header {
     top: 0;
     width: 100%;
     z-index: 999;
+}
+h1,h4{
+    font-family: "paragraph-font";
+    /* font-family: "Heading-font"; */
+}
+p{
+    /* font-family: "Heading-font"; */
+}
+h4{
+    font-size: 1.3em;
 }
 .logo_header{
     display: flex;
@@ -99,6 +112,7 @@ aside {
 #btn_search {
     width: 20%;
     padding: 13px;
+    padding-right: 15px;
     cursor: pointer;
     border-radius: 0 12px 12px 0;
     background-color: #0E6EB3;
@@ -114,14 +128,14 @@ aside {
 .box_content{
     width: 31.3333333333%;
     margin-bottom: 50px;
+    /* min-height: 626.4px; */
+    /* min-width: 275.23px; */
 
 }
 .box_content img{
     width: 100%;
     height: auto; 
     min-height: 280.9px;
-    /* min-width: 210px; */
-    /* max-height: 302.9px; */
 }
 .Filters{
     position: sticky;
@@ -139,6 +153,7 @@ aside {
     margin: 0px 20px 20px 0;
 }
 .h1_Filters{
+    font-size: 1.6rem;
     margin: 0px 0px 20px 20px;
 }
 .Filters .input_box select{

@@ -25,6 +25,18 @@ header {
     width: 100%;
     z-index: 999;
 }
+h1{
+    font-family: "Heading-font";
+    font-size: 1.8em;
+}
+p{
+    font-family: "Text-font";
+}
+.box_content h2{
+    font-size: 1.2em;
+    font-family: "Heading-font";
+    margin-bottom: 10px;
+}
 .logo_header{
     display: flex;
     justify-content: center;

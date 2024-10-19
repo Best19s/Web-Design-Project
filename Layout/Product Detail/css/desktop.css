@@ -12,6 +12,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+h1,h2,h3,h4{
+    font-family: "Heading-font";
+}
+h3{
+    font-size: 1.3em;
+    margin: 10px;
+}
+h1{
+    font-size: 1.8em;
+}
+p{
+    font-family: "Text-font";
+}
 .box_content{
     display: flex;
 }
@@ -156,4 +169,7 @@
 }
 #image_2{
     display: none;
+}
+.price_1_content{
+    margin-right: 20px;
 }

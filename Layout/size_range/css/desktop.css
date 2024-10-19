@@ -18,7 +18,22 @@ body {
     margin: 0;
     padding: 20px;
 }
-
+h1{
+    font-family: "Heading-font";
+}
+h3{
+    font-size: 1.3em;
+    margin: 10px;
+}
+h1{
+    font-size: 1.8em;
+}
+p{
+    font-family: "Text-font";
+}
+.h1_header h1{
+    font-size: 1.8em;
+}
 section{
     padding: 30px;
     display: flex;
@@ -232,4 +247,10 @@ h4 {
 
 .main_detail_2{
     margin-top: 60px;
+}
+.divider {
+    height: 1px; /* ความสูงของเส้น */
+    background-color: #000; /* สีของเส้น */
+    width: 100%; /* ความกว้าง 100% */
+    margin: 20px 0; /* ระยะห่างด้านบนและล่าง */
 }
