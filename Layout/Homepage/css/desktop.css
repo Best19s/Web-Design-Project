@@ -1,14 +1,150 @@
 @import url(../../../component/body/fonts.css);
 @import url(../../../component/body/style.css);
-@import url(../../../component/navbar/navbar.css);
+/* @import url(../../../component/navbar/navbar.css); */
 @import url(../../../component/footer/footer.css);
 
 /* responsive */
 @import url(mobile.css);
 @import url(tablet.css);
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-body,
+.category-body {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.category {
+  margin-top: 1em;
+  padding-left: 5em;
+}
+
+
+.logo {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.nav-item,
+.category-item {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.nav-item:last-child,
+.category-item:last-child {
+  margin: 0;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: 0.5s ease;
+}
+
+.nav-link:hover {
+  border-radius: 12px;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.category-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-1,
+.dropdown-2 {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 1em;
+}
+
+.show-dropdown-2 {
+  position: relative;
+}
+
+.dropdown-1 {
+  position: absolute;
+  left: -1em;
+}
+
+.dropdown-1 a {
+  display: block;
+  /* text-wrap: nowrap; */
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  display: block;
+  transition: 0.5s ease;
+  background-color: var(--primary-color);
+}
+
+.dropdown-1 a:hover {
+  background-color: #0e0f52;
+}
+
+.dropdown-2 {
+  position: absolute;
+  top: -1em;
+  margin-left: 7.9em;
+}
+
+.dropdown-2 a {
+  display: block;
+  text-wrap: nowrap;
+  padding: 1em 2em;
+  transition: 0.5s ease;
+  background-color: #07232f;
+}
+
+.dropdown-2 a:hover {
+  background-color: #9aaab9;
+}
+
+.category-item:hover .dropdown-1 {
+  display: block;
+}
+.show-dropdown-2:hover .dropdown-2 {
+  display: block;
+}
+
+#hamburger {
+  display: none;
+}
+
+#category-women .dropdown-1 {
+  left: 4em;
+}
+
+#category-unisex .dropdown-1 {
+  left: 11em;
+}
+.sidebar {
+  display: none;
+}
+
 .card-container {
-   width: 80%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   gap: 4rem;
@@ -183,13 +319,12 @@
   background-color: #014197;
 }
 
-
 .btn-wish {
   color: #000;
   border: 1px solid #000;
 }
 .text_section {
-   margin-top: 4rem;
+  margin-top: 4rem;
   display: flex;
   gap: 2rem;
 }
