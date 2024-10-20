@@ -1,7 +1,7 @@
-@import url(../component/body/fonts.css);
-@import url(../component/body/style.css);
-@import url(../component/navbar/navbar.css);
-@import url(../component/footer/footer.css);
+@import url(component/body/fonts.css);
+@import url(component/body/style.css);
+@import url(component/navbar/navbar.css);
+@import url(component/footer/footer.css);
 
 .box {
   display: flex;
