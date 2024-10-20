@@ -13,4 +13,60 @@
    .city {
       width: 80%;
    }
+   .logo-brand {
+      padding-left: 1em;
+    }
+    .category {
+      display: none;
+   }
+    .menu {
+      margin-right: 1em;
+    }
+    .menu-desktop {
+      display: none;
+    }
+    .btn-back a {
+      display: block;
+      padding: 0.2em 0.5em;
+      border-radius: 5px;
+      width: fit-content;
+      color: #fff;
+      background-color: #014197;
+    }
+  
+    #hamburger {
+      display: block;
+    }
+    footer {
+      display: block;
+      text-align: center;
+    }
+  
+    .Social-icon {
+      justify-content: center;
+    }
+    .footer-menu {
+      flex-direction: column;
+      gap: 0;
+      text-align: start;
+    }
+    .footer-menu-link {
+      padding: 0;
+      margin: 0;
+    }
+    .footer-menu-link li {
+      padding: 0.5em 2em;
+    }
+    .footer-menu-link h4 {
+      font-size: 1.2em;
+    }
+    .footer-info {
+      width: 100%;
+    }
+    .footer-menu-link a {
+      background-color: #fff;
+      color: #014197;
+      padding: 0.4em;
+      border-radius: 5px;
+    }
  }

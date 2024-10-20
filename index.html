@@ -1,312 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <a href=""><h2>Belle</h2></a>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Belle</title>
+   <link rel="stylesheet" href="index.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="script" href="script.js">
+</head>
+
+<body>
+
+   <nav>
+      <div class="logo-brand">
+         <a href="">
+            <h2>Belle</h2>
+         </a>
       </div>
-      <ul class="nav-body">
-        <!-- <li class="nav-item">
-          <a href="" class="nav-link"><i class="bi bi-bag-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link"><i class="bi bi-heart-fill"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link"><i class="bi bi-person-fill"></i></a>
-        </li> -->
-        <li class="nav-item" id="hamburger">
-          <a onclick="show_sidebar()"><i class="bi bi-list"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">Login</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">SignUp</a>
-        </li>
+      <ul class="dropdown-1">
+         <li><a href="">Login</a></li>
+         <li><a href="">Sign Up</a></li>
       </ul>
-    </nav>
+   </nav>
 
-    <div class="category">
-      <ul class="category-body">
-        <li class="category-item">
-          <a href="" class="category-link"
-            >Men <i class="bi bi-caret-down"></i
-          ></a>
 
-          <ul class="dropdown-1">
-            <li class="show-dropdown-2">
-              <a href="">Clothing <i class="bi bi-caret-down"></i></a>
 
-              <ul class="dropdown-2">
-                <li><a href="">T-Shirt</a></li>
-                <li><a href="">Shirt</a></li>
-                <li><a href="">Pants</a></li>
-                <li><a href="">Jackets</a></li>
-              </ul>
+
+   <div class="box">
+      <div class="heading-text">
+         <h1>Belle</h1>
+      </div>
+      <div class="sub-heading-text">
+         <a href="">Get shopping</a>
+      </div>
+      <div class="box-body"><img src="/img/pic_card_1.jpg" alt="" id="img-1"></div>
+      <div class="box-body"><img src="/img/pic_card_2.jpg" alt="" id="img-2"></div>
+      <div class="box-body"><img src="/img/pic_card_3.jpg" alt="" id="img-3"></div>
+      <div class="box-body"><img src="/img/pic_card_4.jpg" alt="" id="img-4"></div>
+   </div>
+
+
+
+
+
+   <!-- <div class="container">
+
+      <div class="wrapper">
+         <div class="bg-img" id="full-img">
+            <div class="overlay">
+               <div class="btn-link">
+                  <h2>See this collection!</h2>
+               </div>
+            </div>
+            <img src="/img/intro-img.webp" alt="">
+         </div>
+         <div class="introduce" id="right-div">
+            <h2>Welcome to Belle.com </h2>
+            <p>We offer a wide range of categories to suit every taste, including Men, Women, Unisex, Shoes, and
+               Accessories. Whether you're looking for classic pieces or trendy additions to your wardrobe, we've got
+               something for everyone.
+               Explore our curated collections and discover fashion that fits your unique style.</p>
+
+         </div>
+      </div>
+
+      <div class="wrapper">
+         <div class="introduce" id="left-div">
+            <h2>New Collection September 2024!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, expedita temporibus? Quibusdam eligendi
+               libero illo rem, nisi sunt sit eaque voluptatibus alias dolor, aperiam qui, ullam laudantium minima a
+               nesciunt.</p>
+            <div class="btn-introduce">
+               <a href="">See this collection!</a>
+            </div>
+         </div>
+         <div class="bg-img">
+            <div class="overlay">
+               <div class="btn-link">
+                  <h2>See this collection!</h2>
+               </div>
+            </div>
+            <img src="/img/intro-img-2.webp" alt="">
+            <img src="/img/intro-img-3.webp" alt="">
+         </div>
+
+      </div> -->
+
+   <!-- </div> -->
+
+<!--
+   <footer>
+
+      <div class="footer-info">
+         <div class="footer-head">
+            <h2>Belle</h2>
+            <p>Always Beautiful</p>
+         </div>
+         <div class="Social-icon">
+            <img src="/img/icon/Facebook.svg" alt="">
+            <img src="/img/icon/Google.svg" alt="">
+            <img src="/img/icon/Gmail.svg" alt="">
+            <img src="/img/icon/Instagram.svg" alt="">
+            <img src="/img/icon/TikTok.svg" alt="">
+         </div>
+         <div class="copyright">
+            <h4>© 2024 Belle.com All Rights Reserved.</h4>
+            <p>All content, including images, text, and designs, is the property of Belle.com and may not be reproduced
+               or distributed without permission.</p>
+         </div>
+      </div>
+
+      <div class="footer-menu">
+         <ul class="footer-menu-link">
+            <li>
+               <h4>Category</h4>
             </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Shoes <i class="bi bi-caret-right"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Sneakers</a></li>
-                <li><a href="">Formal Shoes</a></li>
-                <li><a href="">Boots</a></li>
-                <li><a href="">Sandals</a></li>
-              </ul>
+            <li>Women</li>
+            <li>Men</li>
+            <li>Unisex</li>
+            <li>Shoes</li>
+            <li>Accessories</li>
+         </ul>
+         <ul class="footer-menu-link">
+            <li>
+               <h4>Account</h4>
             </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Accessories <i class="bi bi-caret-right"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Watches</a></li>
-                <li><a href="">Belts</a></li>
-                <li><a href="">Hats</a></li>
-                <li><a href="">Sunglasses</a></li>
-              </ul>
+            <li>Setting</li>
+            <li>Order Tracking</li>
+            <li>Return</li>
+         </ul>
+         <ul class="footer-menu-link">
+            <li>
+               <h4>News & Promotion</h4>
             </li>
-          </ul>
-        </li>
-
-        <li class="category-item" id="category-women">
-          <a href="" class="category-link"
-            >Women <i class="bi bi-caret-down"></i
-          ></a>
-
-          <ul class="dropdown-1">
-            <li class="show-dropdown-2">
-              <a href="">Clothing <i class="bi bi-caret-right"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">T-Shirt</a></li>
-                <li><a href="">Shirt</a></li>
-                <li><a href="">Pants</a></li>
-                <li><a href="">Jackets</a></li>
-              </ul>
+            <li>New Collection 2024</li>
+            <li>Best Selling 2024</li>
+            <li>News</li>
+         </ul>
+         <ul class="footer-menu-link">
+            <li>
+               <h4>Help Center</h4>
             </li>
+            <li>FAQ+</li>
+            <li>Live Chat</li>
+            <li>Contact Us</li>
+         </ul>
+      </div>
+   </footer> -->
 
-            <li class="show-dropdown-2">
-              <a href="">Shoes <i class="bi bi-caret-right"></i></a>
+</body>
 
-              <ul class="dropdown-2">
-                <li><a href="">Sneakers</a></li>
-                <li><a href="">Formal Shoes</a></li>
-                <li><a href="">Boots</a></li>
-                <li><a href="">Sandals</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Accessories <i class="bi bi-caret-right"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Watches</a></li>
-                <li><a href="">Belts</a></li>
-                <li><a href="">Hats</a></li>
-                <li><a href="">Sunglasses</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li class="category-item" id="category-unisex">
-          <a href="" class="category-link"
-            >Unisex <i class="bi bi-caret-down"></i
-          ></a>
-
-          <ul class="dropdown-1">
-            <li class="show-dropdown-2">
-              <a href="">Clothing <i class="bi bi-caret-right"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">T-Shirt</a></li>
-                <li><a href="">Shirt</a></li>
-                <li><a href="">Pants</a></li>
-                <li><a href="">Jackets</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Shoes <i class="bi bi-caret-right"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Sneakers</a></li>
-                <li><a href="">Formal Shoes</a></li>
-                <li><a href="">Boots</a></li>
-                <li><a href="">Sandals</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Accessories <i class="bi bi-caret-right"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Watches</a></li>
-                <li><a href="">Belts</a></li>
-                <li><a href="">Hats</a></li>
-                <li><a href="">Sunglasses</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li class="category-item">
-          <a href="" class="category-link">News</a>
-        </li>
-        <li class="category-item">
-          <a href="" class="category-link">Best-selling</a>
-        </li>
-      </ul>
-      <br />
-      <hr />
-    </div>
-
-    <div class="sidebar">
-      <a onclick="exit_sidebar()" id="exit"><i class="bi bi-x"></i></a>
-      <ul class="sidebar-body">
-        <li><a href="" class="main-menu">LogIn</a></li>
-        <li><a href="" class="main-menu">SignUp</a></li>
-        <br />
-        <li>
-          <a onclick="show_menu(this)">Men <i class="bi bi-caret-down-fill"></i></a>
-
-          <ul class="dropdown-1">
-            <li class="show-dropdown-2">
-              <a href="">Clothing <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">T-Shirt</a></li>
-                <li><a href="">Shirt</a></li>
-                <li><a href="">Pants</a></li>
-                <li><a href="">Jackets</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Shoes <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Sneakers</a></li>
-                <li><a href="">Formal Shoes</a></li>
-                <li><a href="">Boots</a></li>
-                <li><a href="">Sandals</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Accessories <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Watches</a></li>
-                <li><a href="">Belts</a></li>
-                <li><a href="">Hats</a></li>
-                <li><a href="">Sunglasses</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">Women <i class="bi bi-caret-down-fill"></i></a>
-          <ul class="dropdown-1">
-            <li class="show-dropdown-2">
-              <a href="">Clothing <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">T-Shirt</a></li>
-                <li><a href="">Shirt</a></li>
-                <li><a href="">Pants</a></li>
-                <li><a href="">Jackets</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Shoes <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Sneakers</a></li>
-                <li><a href="">Formal Shoes</a></li>
-                <li><a href="">Boots</a></li>
-                <li><a href="">Sandals</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Accessories <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Watches</a></li>
-                <li><a href="">Belts</a></li>
-                <li><a href="">Hats</a></li>
-                <li><a href="">Sunglasses</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">Unisex <i class="bi bi-caret-down-fill"></i></a>
-          <ul class="dropdown-1">
-            <li class="show-dropdown-2">
-              <a href="">Clothing <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">T-Shirt</a></li>
-                <li><a href="">Shirt</a></li>
-                <li><a href="">Pants</a></li>
-                <li><a href="">Jackets</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Shoes <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Sneakers</a></li>
-                <li><a href="">Formal Shoes</a></li>
-                <li><a href="">Boots</a></li>
-                <li><a href="">Sandals</a></li>
-              </ul>
-            </li>
-
-            <li class="show-dropdown-2">
-              <a href="">Accessories <i class="bi bi-caret-down"></i></a>
-
-              <ul class="dropdown-2">
-                <li><a href="">Watches</a></li>
-                <li><a href="">Belts</a></li>
-                <li><a href="">Hats</a></li>
-                <li><a href="">Sunglasses</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="">News</a></li>
-        <li><a href="">Best-selling</a></li>
-      </ul>
-    </div>
-
-    <script>
-      function show_sidebar() {
-        sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "block";
-      }
-
-      function exit_sidebar() {
-        sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none";
-      }
-
-      function show_menu() {
-        menu = document.querySelector(".dropdown-1");
-        menu.style.display = "block";
-      }
-    </script>
-  </body>
 </html>

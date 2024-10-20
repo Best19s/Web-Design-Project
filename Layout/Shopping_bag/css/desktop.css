@@ -2,7 +2,7 @@
 @import url(../../../component/body/style.css);
 @import url(../../../component/navbar/navbar.css);
 @import url(../../../component/footer/footer.css);
-
+@import url(../../../component/bread_crump/bread_crump.css);
 /* responsive */
 @import url(mobile.css);
 @import url(tablet.css);
@@ -19,25 +19,7 @@ input, select {
    /* height: 100vh; */
 }
 
-.breadcrumb_item {
-   list-style-type: none;
-   padding: 0;
-   margin-left: 5%;
-   margin-right: 5%;
-   padding-bottom: 1rem;
-   border-bottom: 2px solid #ADD8E6;
-}
-.breadcrumb_item li {
-   display: inline-block;
-   color: #0E6EB3;
 
-}
-.breadcrumb_item li+li:before {
-   padding: 8px;
-   color: black;
-   content: ">";
-   color: #0E6EB3;
- }
 
  .btn-back {
    margin-left: 5%;

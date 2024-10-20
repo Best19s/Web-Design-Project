@@ -41,8 +41,19 @@ footer {
 .footer-menu-link {
    list-style-type: none;
    font-size: 1rem;
+
 }
 
+.footer-menu-link a {
+   display: block;
+   color: #fff;
+   text-decoration: none;
+   margin-bottom: 1em;
+}
+
+.footer-head {
+   margin-top: 1em;
+}
 
 footer {
    clear: both;

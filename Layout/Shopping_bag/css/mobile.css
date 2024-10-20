@@ -1,46 +1,105 @@
 @media only screen and (max-width: 426px) {
+  .category {
+    display: none;
+  }
+  .logo-brand {
+    padding-left: 1em;
+  }
+  .menu {
+    margin-right: 1em;
+  }
+  .menu-desktop {
+    display: none;
+  }
 
+  #hamburger {
+    display: block;
+  }
+  .breadcrumb {
+   display: none;
+  }
+  .btn-back {
+   margin-top: 1em;
+  }
+  .btn-back a {
+   display: block;
+   padding: .2em .5em;
+   border-radius: 5px;
+   width: fit-content;
+   color: #fff;
+   background-color: #014197;
+  }
 
-   .total_wrapper {
-      /* display: none; */
-      width: 100%;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-   }
+  .total_wrapper {
+    /* display: none; */
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
-   .card_wrapper {
-      display: block;
-      /* flex-direction: column; */
-      width: 100%;
-   }
-   .container {
-      padding: 0 1rem;
-   }
-   .card_img {
-      width: 100%;
-   }
-   .card_img img {
-      width: 100%;
-   }
-   .card_info {
-      width: 100%;
-      margin: 0;
-   }
-   .remove {
-      margin-top: 1rem;
-   }
-   .color, .size {
-      flex-direction: column;
-   }
-   .color select, .size select {
-      width: 100%;
-   }
-   .size {
-      margin-top: 1rem;
-   }
+  .card_wrapper {
+    display: block;
+    /* flex-direction: column; */
+    width: 100%;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .card_img {
+    width: 100%;
+  }
+  .card_img img {
+    width: 100%;
+  }
+  .card_info {
+    width: 100%;
+    margin: 0;
+  }
+  .remove {
+    margin-top: 1rem;
+  }
+  .color,
+  .size {
+    flex-direction: column;
+  }
+  .color select,
+  .size select {
+    width: 100%;
+  }
+  .size {
+    margin-top: 1rem;
+  }
 
-   footer {
-      display: none;
-   }
+  footer {
+    display: block;
+    text-align: center;
+  }
 
+  .Social-icon {
+    justify-content: center;
+  }
+  .footer-menu {
+    flex-direction: column;
+    gap: 0;
+    text-align: start;
+  }
+  .footer-menu-link {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-menu-link li {
+    padding: 0.5em 2em;
+  }
+  .footer-menu-link h4 {
+    font-size: 1.2em;
+  }
+  .footer-info {
+    width: 100%;
+  }
+  .footer-menu-link a {
+    background-color: #fff;
+    color: #014197;
+    padding: 0.4em;
+    border-radius: 5px;
+  }
 }

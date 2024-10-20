@@ -1,3 +1,8 @@
+
+.breadcrumb {
+  margin-top: 2em;
+}
+
 .breadcrumb_item {
   list-style-type: none;
   padding: 0;
@@ -9,13 +14,17 @@
 .breadcrumb_item li {
   display: inline-block;
   color: #0e6eb3;
-  /* margin-right: 2rem; */
+
 }
 .breadcrumb_item li + li:before {
   padding: 8px;
   color: black;
   content: ">";
   color: #0e6eb3;
+}
+.breadcrumb_item a {
+  color: #000;
+  text-decoration: none;
 }
 
 .btn-back {
@@ -26,3 +35,5 @@
   color: #000;
   font-size: 1.3rem;
 }
+
+

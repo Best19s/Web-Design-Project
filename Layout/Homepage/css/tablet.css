@@ -1,10 +1,5 @@
 @media only screen and (max-width: 812px) {
-  footer {
-   display: none;
-  }
-  .second_navbar {
-   top: 10.4%;
-  }
+
   .heading_text h1{
    font-size: 4rem;
   }
@@ -26,13 +21,15 @@
   }
 
   .btn-shop{
+    display: block;
+    width: auto;
    position: relative;
    padding: 1rem;
    transform: rotate(0);
    left: 0;
    border-radius: 0;
    display: block;
-   width: 95%;
+   /* width: 95%; */
   }
   .adv_img {
    margin-top: 1rem;
@@ -56,5 +53,43 @@
   .paragraph {
    display: block;
    columns: 2;
+  }
+  .logo-brand {
+    padding-left: 1em;
+  }
+  .menu {
+    margin-right: 1em;
+  }
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .Social-icon {
+    justify-content: center;
+  }
+  .footer-menu {
+    flex-direction: column;
+    gap: 0;
+    text-align: start;
+  }
+  .footer-menu-link {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-menu-link li {
+    padding: .5em 2em;
+  }
+  .footer-menu-link h4 {
+    font-size: 1.2em;
+  }
+  .footer-info {
+    width: 100%;
+  }
+  .footer-menu-link a {
+    background-color: #fff;
+    color: #014197;
+    padding: .4em;
+    border-radius: 5px;
   }
 }

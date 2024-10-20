@@ -2,15 +2,45 @@
 @import url(../../../component/body/style.css);
 /* @import url(../../../component/navbar/navbar.css); */
 @import url(../../../component/footer/footer.css);
-
+@import url(../../../component/bread_crump/bread_crump.css);
 /* responsive */
 @import url(mobile.css);
 @import url(tablet.css);
 
 nav {
+  background-color: #014197;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo-brand {
+  padding-left: 5em;
+}
+.logo-brand a {
+  font-family: "Heading-font";
+  color: #fff;
+  text-decoration: none;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-right: 5em;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu a {
+  color: #fff;
 }
 
 .nav-body,
@@ -21,9 +51,15 @@ nav {
   position: relative;
 }
 
+
 .category {
   margin-top: 1em;
   padding-left: 5em;
+  padding-right: 5em;
+  position: sticky;
+  top: 6em;
+  z-index: 998;
+
 }
 
 
@@ -106,7 +142,7 @@ nav {
 .dropdown-2 {
   position: absolute;
   top: -1em;
-  margin-left: 7.9em;
+  margin-left: 7.2em;
 }
 
 .dropdown-2 a {
@@ -126,6 +162,10 @@ nav {
 }
 .show-dropdown-2:hover .dropdown-2 {
   display: block;
+}
+.show-dropdown-2 a {
+  display: flex;
+  justify-content: space-between;
 }
 
 #hamburger {
