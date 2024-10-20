@@ -1,0 +1,124 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(desktop.css);
+@import url(tablet.css);
+
+@media screen and (max-width: 632px){
+
+    main{
+        width: 100%;
+    }
+    .section{
+        padding: 30px;
+        display: block;
+    }
+    .container_table{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .image_1{
+        display: none;
+    }
+    .image_2{
+        display: none;
+    }
+    .section_2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    
+    .main_detail{
+        display: block;
+        margin-top: 10px;
+    }
+    .text_detail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper{
+        width: 100%;
+        display: block;
+    }
+    .text_main1 {
+        width: 100%;
+        padding: 40px;
+        line-height: 2;
+    }
+    .text_main1_1{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .text_main2{
+        width: 100%;
+        padding: 40px;
+        line-height: 2;
+    }
+    .text_main2_1 {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image_main_detail{
+        margin: 0 auto;
+    }
+    .category {
+        display: none;
+      }
+      .logo-brand {
+        padding-left: 1em;
+      }
+      .menu {
+        margin-right: 1em;
+      }
+      .menu-desktop {
+        display: none;
+      }
+    
+      #hamburger {
+        display: block;
+      }
+      footer {
+        display: block;
+        text-align: center;
+      }
+    
+      .Social-icon {
+        justify-content: center;
+      }
+      .footer-menu {
+        flex-direction: column;
+        gap: 0;
+        text-align: start;
+      }
+      .footer-menu-link {
+        padding: 0;
+        margin: 0;
+      }
+      .footer-menu-link li {
+        padding: 0.5em 2em;
+      }
+      .footer-menu-link h4 {
+        font-size: 1.2em;
+      }
+      .footer-info {
+        width: 100%;
+      }
+      .footer-menu-link a {
+        background-color: #fff;
+        color: #014197;
+        padding: 0.4em;
+        border-radius: 5px;
+      }
+}

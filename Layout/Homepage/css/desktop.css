@@ -196,6 +196,9 @@ nav {
 .card {
   width: 50%;
 }
+.card h2 {
+  text-wrap: nowrap;
+}
 
 .card img {
   width: 100%;

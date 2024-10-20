@@ -1,0 +1,145 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(desktop.css);
+@import url(tablet.css);
+
+
+@media screen and (width < 578px) {
+
+    .add_to_wish {
+        width: auto;
+    }
+    
+    .section{   
+        margin: 0;
+        display: block;
+    }
+    .aside {
+       display: none; 
+    }
+    .main {
+        padding: 20px;
+        width: 100%;
+    }
+    .box_content {
+        width: 100%;
+    }
+    .box_content img{
+        width: 100%;
+        height: auto; 
+        min-height: 102.9px;
+        max-height: 774px;
+    }
+    .BEM{
+        display: none;
+    }
+
+    .search {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%; /* กำหนดความกว้างเต็ม */
+    }
+    
+    .search-container {
+        width: 100%;
+        display: inline-flex; /* เปลี่ยนเป็น inline-flex เพื่อจัดเรียง input และ button ในแถวเดียวกัน */
+        align-items: center; /* จัดให้ input และ button อยู่ตรงกลางในแนวตั้ง */
+        border: 2px solid #0E6EB3;
+        border-radius: 12px;
+    }
+
+    .search-container input[type=text] {
+        width: 70%; 
+        font-size: 17px;
+        border-radius: 12px 0 0 12px;
+        border: 1px solid white;
+    }
+    
+    #btn_search {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        padding: 13px;
+        cursor: pointer;
+        border-radius: 0 12px 12px 0;
+        background-color: #0E6EB3;
+        color: white;
+        border: 1px solid white;
+    }
+
+    /* ปรับ recommended ให้มาอยู่ข้างล่าง */
+    .recommended_main {
+        display: block;
+        width: 100%; /* ความกว้างเต็ม 100% */
+        margin-top: 20px; /* เพิ่มระยะห่างจากด้านบน */
+        margin-left: 0;
+    }
+
+    .recommended_main select {
+        width: 100%; 
+        font-size: 17px;
+        border-radius: 12px;
+        border: 1px solid white;
+        padding: 10px 0;
+    }
+    .logo-brand {
+        padding-left: 1em;
+      }
+      .category {
+        display: none;
+     }
+      .menu {
+        margin-right: 1em;
+      }
+      .menu-desktop {
+        display: none;
+      }
+      .btn-back a {
+        display: block;
+        padding: 0.2em 0.5em;
+        border-radius: 5px;
+        width: fit-content;
+        color: #fff;
+        background-color: #014197;
+      }
+    
+      #hamburger {
+        display: block;
+      }
+      footer {
+        display: block;
+        text-align: center;
+      }
+    
+      .Social-icon {
+        justify-content: center;
+      }
+      .footer-menu {
+        flex-direction: column;
+        gap: 0;
+        text-align: start;
+      }
+      .footer-menu-link {
+        padding: 0;
+        margin: 0;
+      }
+      .footer-menu-link li {
+        padding: 0.5em 2em;
+      }
+      .footer-menu-link h4 {
+        font-size: 1.2em;
+      }
+      .footer-info {
+        width: 100%;
+      }
+      .footer-menu-link a {
+        background-color: #fff;
+        color: #014197;
+        padding: 0.4em;
+        border-radius: 5px;
+      }
+}

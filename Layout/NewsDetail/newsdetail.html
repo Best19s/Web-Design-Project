@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Detail</title>
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- <link rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo-brand">
+        <a href="">
+          <h2>Belle</h2>
+        </a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="../Shopping_bag/shopping_bag.html" class="menu-desktop"
+            ><i class="bi bi-bag-fill"></i
+          ></a>
+        </li>
+        <li>
+          <a href="" class="menu-desktop"><i class="bi bi-heart-fill"></i></a>
+        </li>
+        <li>
+          <a href="" class="menu-desktop"
+            ><i class="bi bi-person-circle"></i
+          ></a>
+        </li>
+        <li>
+          <a href="" id="hamburger"><i class="bi bi-list"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="category">
+      <ul class="category-body">
+        <li class="category-item">
+          <a href="" class="category-link"
+            >Men <i class="bi bi-caret-down"></i
+          ></a>
+
+          <ul class="dropdown-1">
+            <li class="show-dropdown-2">
+              <a href="">Clothing <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">T-Shirt</a></li>
+                <li><a href="">Shirt</a></li>
+                <li><a href="">Pants</a></li>
+                <li><a href="">Jackets</a></li>
+              </ul>
+            </li>
+
+            <li class="show-dropdown-2">
+              <a href="">Shoes <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">Sneakers</a></li>
+                <li><a href="">Formal Shoes</a></li>
+                <li><a href="">Boots</a></li>
+                <li><a href="">Sandals</a></li>
+              </ul>
+            </li>
+
+            <li class="show-dropdown-2">
+              <a href="">Accessories <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">Watches</a></li>
+                <li><a href="">Belts</a></li>
+                <li><a href="">Hats</a></li>
+                <li><a href="">Sunglasses</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="category-item" id="category-women">
+          <a href="" class="category-link"
+            >Women <i class="bi bi-caret-down"></i
+          ></a>
+
+          <ul class="dropdown-1">
+            <li class="show-dropdown-2">
+              <a href="">Clothing <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">T-Shirt</a></li>
+                <li><a href="">Shirt</a></li>
+                <li><a href="">Pants</a></li>
+                <li><a href="">Jackets</a></li>
+              </ul>
+            </li>
+
+            <li class="show-dropdown-2">
+              <a href="">Shoes <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">Sneakers</a></li>
+                <li><a href="">Formal Shoes</a></li>
+                <li><a href="">Boots</a></li>
+                <li><a href="">Sandals</a></li>
+              </ul>
+            </li>
+
+            <li class="show-dropdown-2">
+              <a href="">Accessories <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">Watches</a></li>
+                <li><a href="">Belts</a></li>
+                <li><a href="">Hats</a></li>
+                <li><a href="">Sunglasses</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="category-item" id="category-unisex">
+          <a href="" class="category-link"
+            >Unisex <i class="bi bi-caret-down"></i
+          ></a>
+
+          <ul class="dropdown-1">
+            <li class="show-dropdown-2">
+              <a href="">Clothing <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">T-Shirt</a></li>
+                <li><a href="">Shirt</a></li>
+                <li><a href="">Pants</a></li>
+                <li><a href="">Jackets</a></li>
+              </ul>
+            </li>
+
+            <li class="show-dropdown-2">
+              <a href="">Shoes <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">Sneakers</a></li>
+                <li><a href="">Formal Shoes</a></li>
+                <li><a href="">Boots</a></li>
+                <li><a href="">Sandals</a></li>
+              </ul>
+            </li>
+
+            <li class="show-dropdown-2">
+              <a href="">Accessories <i class="bi bi-caret-right"></i></a>
+
+              <ul class="dropdown-2">
+                <li><a href="">Watches</a></li>
+                <li><a href="">Belts</a></li>
+                <li><a href="">Hats</a></li>
+                <li><a href="">Sunglasses</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="category-item">
+          <a href="" class="category-link">News</a>
+        </li>
+        <li class="category-item">
+          <a href="" class="category-link">Best-selling</a>
+        </li>
+      </ul>
+    </div>
+    <section>
+      <h1>NEWS</h1>
+      <div class="main_content_1">
+        <img
+          class="img_container"
+          id="image_mian"
+          src="../../img/how-to-style-a-leather-blazer-matching-accessories(1).webp"
+          alt=""
+        />
+        <div class="text_main_content">
+          <div class="text_float">
+            <h2>“I’</h2>
+          </div>
+          <div class="box_text_right">
+            <p>
+              “I’m not usually this dressed-up,” Rosie Huntington-Whiteley
+              promises with distinctly British self-depreciatory charm, as the
+              door to her Chelsea pied-à-terre swings open. Gold pendants dangle
+              above a Hermès tank top and a Wardrobe.NYC drill skirt. Heels, of
+              course (and upstairs, a miniature taupe-colored ‘Kelly’ bag is
+              resting on a white bouclé sofa). Not a hair is out of place. She
+              could easily be about to do an Architectural Digest home tour of
+              the wedding-cake house, which is as beautifully dressed as she is,
+              designed by Rose Uniacke and filled with esoteric pieces. She’s
+              quick to point out that she has been on duty at a press day,
+              talking editors through her latest high-street underwear line. Her
+              kids, meanwhile, are almost back at school. She’s spent a couple
+              of weeks on vacation, but has upcoming work trips to the Middle
+              East, fashion-week shows to attend, a new career pivot as an angel
+              investor, and the launch of a collection she’s designed for
+              Wardrobe.NYC, a brand she says she wears most days – and that
+              we’re here to discuss. So, a standardly whirlwind time for the
+              supermodel-turned-entrepreneur. Getting to know
+              Huntington-Whiteley is interesting because there’s far more to her
+              than meets the eye. As a supermodel, that’s probably the story of
+              her life. But the lacquered image of perfection belies a far more
+              fascinating story of a woman who has worked hard to gain autonomy
+              in a world that is keen to pigeonhole her as the ultimate pin-up.
+              Underestimate her at your own peril seems to be the underlying
+              narrative.
+            </p>
+            <div class="buy_product_1">
+              <div class="box_product">
+                <img src="../../img/3704002_17000207827793_500.jpg" alt="" />
+                <div class="box_producttext">
+                  <h3>ISABEL MARANT</h3>
+                  <p>Joely metallic ribbed-knit tank</p>
+                </div>
+                <div class="btn_shop">
+                  <a href="#">Shop</a>
+                </div>
+              </div>
+              <div class="box_product">
+                <img src="../../img/21477878_51669439_1000.jpg" alt="" />
+                <div class="box_producttext">
+                  <h3>CELINE EYEWEAR</h3>
+                  <p>
+                    Triomphe crystal-embellished square-frame gold-tone
+                    sunglasses
+                  </p>
+                  <div class="btn_shop">
+                    <a href="#">Shop</a>
+                  </div>
+                </div>
+              </div>
+              <div class="box_product">
+                <img
+                  src="../../img/https___is4.fwrdassets.com_images_p_fw_z_FNEF-WY3406_V1.jpg"
+                  alt=""
+                />
+                <div class="box_producttext">
+                  <h3>CHLOÉ</h3>
+                  <p>Eve textured-leather knee boots</p>
+                  <div class="btn_shop">
+                    <a href="#">Shop</a>
+                  </div>
+                </div>
+              </div>
+              <div class="box_product">
+                <div class="box_producttext">
+                  <img
+                    src="../../img/1634694414e483dc21480f4ebe7ad1e8481863119b_thumbnail_405x552.jpg"
+                    alt=""
+                  />
+                  <h3>ALAÏA</h3>
+                  <p>Pleated wool maxi skirt</p>
+                  <div class="btn_shop">
+                    <a href="#">Shop</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_box">
+        <div class="img_box">
+          <div class="box_image_poster" id="box1_image_poster">
+            <img src="../../img/m10.jpg" alt="" />
+            <p>Jacket, and pants, both Wardrobe.NYC</p>
+          </div>
+          <div class="box_image_poster" id="box2_image_poster">
+            <img src="../../img/m11.jpg" alt="" />
+            <p>Jacket, pants, and boots, all Wardrobe.NYC</p>
+          </div>
+        </div>
+        <p>
+          “As I’ve gotten older, I feel less need to prove myself to people,”
+          she tells me over an iced coffee. “I feel pretty good that I know who
+          I am. A couple of years ago, I was in a very different headspace – and
+          we all have periods where we’re not feeling good, but you need those
+          moments to appreciate when things are better.” Right now, at 37, she
+          says, she’s feeling the best she has in years.
+        </p>
+      </div>
+      <div class="buy_product_2">
+        <div class="box_product_detail_1">
+          <img
+            src="../../img/2_696850e1-fd80-4511-849e-ccaa513da847_800x.webp"
+            alt=""
+          />
+          <h3>ISABEL MARANT</h3>
+          <p>Joely metallic ribbed-knit tank</p>
+          <div class="btn_shop">
+            <a href="#">Shop</a>
+          </div>
+        </div>
+        <div class="box_product_detail_1">
+          <img src="../../img/2100002568770_2.webp" alt="" />
+          <h3>CELINE EYEWEAR</h3>
+          <p>Triomphe crystal-embellished square-frame gold-tone sunglasses</p>
+          <div class="btn_shop">
+            <a href="#">Shop</a>
+          </div>
+        </div>
+        <div class="box_product_detail_1">
+          <img
+            src="../../img/sac-autre-saintlaurent-2401-267-Saint_Laurent-vintega-seconde-main-luxe-maroquinerie-occasion_1_n.webp"
+            alt=""
+          />
+          <h3>CHLOÉ</h3>
+          <p>Eve textured-leather knee boots</p>
+          <div class="btn_shop">
+            <a href="#">Shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="main_content_2">
+        <div class="text_main_content">
+          <div class="text_float">
+            <h2>“C’</h2>
+          </div>
+          <div class="box_text_right">
+            <p>
+              Surface-level, she seems like the woman who’s got it all: the
+              fabulous houses, the booming career, the action-hero husband, two
+              beautiful children, and a wardrobe brimming with The Row, Saint
+              Laurent and Alaïa. And 20 million followers to share it all with.
+              But she’s refreshingly candid about the fact there have been
+              challenges. There was a brief acting career, a beauty brand that
+              she stepped away from this year, uprooting her family to London
+              during the pandemic, postpartum struggles, and a few years where
+              work took a backseat after having her babies.
+            </p>
+            <br />
+            <p>
+              “Success is so easy when something works out quickly,” she points
+              out. “It’s great, fantastic! But when you’ve gone through sort of
+              adversity, or you’ve had these challenging moments, and you’ve had
+              the rug pulled from under your feet – professionally and
+              personally – that’s when you go to the real depths of yourself. In
+              the moment, it feels horrendous. But as time goes by, you get to
+              have more perspective, you get to have understood a side of
+              yourself that is resilient.”
+            </p>
+            <br />
+            <p>
+              Her wisdom comes with more than two decades of professional
+              experience. The story of how she got her start is somewhat
+              legendary. Having grown up helping out on the family farm in
+              Devon, at 15 she wrote to a modeling agency to do a
+              work-experience placement, which she spent making cups of tea and
+              filing model books until someone realized that there was a
+              potential supermodel right under their noses. Back to Devon she
+              went, returning to London the following year with a handful of
+              GCSEs and the indeterminable drive that saw her pound the
+              pavements to castings and travel to do catalogue work and teen
+              magazines – often on her own.
+            </p>
+          </div>
+          <div class="buy_product_3">
+            <div class="box_product">
+              <img
+                src="../../img/https___lp.arket.com_app006prod_set5B2F.jpg"
+                alt=""
+              />
+              <h3>ISABEL MARANT</h3>
+              <p>Joely metallic ribbed-knit tank</p>
+              <div class="btn_shop">
+                <a href="#">Shop</a>
+              </div>
+            </div>
+            <div class="box_product">
+              <img src="../../img/661341-0014_20.jpg" alt="" />
+              <h3>CELINE EYEWEAR</h3>
+              <p>
+                Triomphe crystal-embellished square-frame gold-tone sunglasses
+              </p>
+              <div class="btn_shop">
+                <a href="#">Shop</a>
+              </div>
+            </div>
+            <div class="box_product">
+              <img src="../../img/4S282CPLB.19TR_3_SS24_W.webp" alt="" />
+              <h3>CHLOÉ</h3>
+              <p>Eve textured-leather knee boots</p>
+              <div class="btn_shop">
+                <a href="#">Shop</a>
+              </div>
+            </div>
+            <div class="box_product">
+              <img
+                src="../../img/A20D4B0A-3E08-4C4E-B610-154423ECA0E8_720x.webp"
+                alt=""
+              />
+              <h3>ALAÏA</h3>
+              <p>Pleated wool maxi skirt</p>
+              <div class="btn_shop">
+                <a href="#">Shop</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          class="img_container"
+          id="image_mian2"
+          src="../../img/m12.jpg"
+          alt=""
+        />
+      </div>
+      <div class="main_content_4">
+        <h3>Recommended</h3>
+        <div class="buy_product_4">
+          <div class="box_product_detail_2">
+            <img src="../../img/bg_4875509_100244_m.jpg" alt="" />
+            <h3>ISABEL MARANT</h3>
+            <p>Joely metallic ribbed-knit tank</p>
+            <div class="btn_shop">
+              <a href="#">Shop</a>
+            </div>
+          </div>
+          <div class="box_product_detail_2">
+            <img
+              src="../../img/bd2ef5b4c5182abff324ffa410f550c5_tn.jpg"
+              alt=""
+            />
+            <h3>CELINE EYEWEAR</h3>
+            <p>
+              Triomphe crystal-embellished square-frame gold-tone sunglasses
+            </p>
+            <div class="btn_shop">
+              <a href="#">Shop</a>
+            </div>
+          </div>
+          <div class="box_product_detail_2" id="box_product_detail_2_2">
+            <img src="../../img/24670403_54994909_600.jpg" alt="" />
+            <h3>CHLOÉ</h3>
+            <p>Eve textured-leather knee boots</p>
+            <div class="btn_shop">
+              <a href="#">Shop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-info">
+        <div class="footer-head">
+          <h2>Belle</h2>
+          <p>Always Beautiful</p>
+        </div>
+        <div class="Social-icon">
+          <img src="../../img/icon/Facebook.svg" alt="icon Facebook" />
+          <img src="../../img/icon/Google.svg" alt="icon Google" />
+          <img src="../../img/icon/Gmail.svg" alt="icon Gmail" />
+          <img src="../../img/icon/Instagram.svg" alt="icon Instagram" />
+          <img src="../../img/icon/TikTok.svg" alt="icon TikTok" />
+        </div>
+        <div class="copyright">
+          <h4>© 2024 Belle.com All Rights Reserved.</h4>
+          <p>
+            All content, including images, text, and designs, is the property of
+            Belle.com and may not be reproduced or distributed without
+            permission.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-menu">
+        <ul class="footer-menu-link">
+          <li>
+            <h4>Category</h4>
+          </li>
+          <li><a href="">Women</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Unisex</a></li>
+          <li><a href="">Shoes</a></li>
+          <li><a href="">Accessories</a></li>
+        </ul>
+        <ul class="footer-menu-link">
+          <li>
+            <h4>Account</h4>
+          </li>
+          <li><a href="">Setting</a></li>
+          <li><a href="">Order Tracking</a></li>
+          <li><a href="">Return</a></li>
+        </ul>
+        <ul class="footer-menu-link">
+          <li>
+            <h4>News & Promotion</h4>
+          </li>
+          <li><a href="">New Collection 2024</a></li>
+          <li><a href="">Best Selling 2024</a></li>
+          <li><a href="">News</a></li>
+        </ul>
+        <ul class="footer-menu-link">
+          <li>
+            <h4>Help Center</h4>
+          </li>
+          <li><a href="">FAQ+</a></li>
+          <li><a href="">Live Chat</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

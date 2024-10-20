@@ -1,0 +1,31 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(desktop.css);
+
+
+@media screen and (min-width:578px) and (max-width:1024px){
+
+    section{
+        display: block;
+        min-width: 588px;
+        min-height: 2956px;
+    }
+    .main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        padding: 0;
+        margin: 0 20px;
+    }
+    .box_return {
+        width: 100%; /* กำหนดความกว้างเริ่มต้นให้กับกล่อง */
+        border: 1px solid #000;
+        flex-grow: 1; /* ทำให้กล่องขยายเต็มพื้นที่ที่มีอยู่ */
+     }
+}

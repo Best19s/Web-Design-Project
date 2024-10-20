@@ -1,0 +1,168 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(desktop.css);
+@import url(tablet.css);
+
+@media screen and (width < 578px) {
+
+  section {
+    padding: 20px;
+  }
+  .container_main {
+    margin: 20px 0px;
+    position: relative; /* กำหนดตำแหน่งของ container */
+    min-width: 532.8px;
+    min-height: 200px;
+  }
+
+  .img_container {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    /* min-width: 214px;
+        min-height: 324px; */
+    position: relative; /* ให้รูปภาพเป็น relative เพื่อให้ absolute ด้านบน */
+    z-index: 1; /* รูปภาพอยู่ชั้นล่าง */
+  }
+
+  .img_container img {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .box_container {
+    display: block;
+    text-align: center;
+    /* border: 1px solid #000; */
+    background-color: white;
+    position: absolute;
+    color: black;
+    margin: 0 20px;
+    width: 89.5%; /* ขยายกล่องข้อความให้ครอบคลุมรูป */
+    z-index: 2; /* ข้อความอยู่ชั้นบน */
+
+    padding: 20px; /* เพิ่ม padding */
+    bottom: 0;
+  }
+  .news_other {
+    min-width: 214px;
+    min-height: 324px;
+  }
+  .news_other_box {
+    /* border: 1px solid #000; */
+    width: 100%;
+    min-width: 532.8px;
+    min-height: 200px;
+    margin-bottom: 30px;
+    /* border-radius: 12px; */
+  }
+  .img_news_other {
+    width: 100%;
+    height: 200px;
+  }
+
+  .img_news_other img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 12px 12px 0  0; */
+  }
+  .text_container {
+    display: none;
+  }
+  #news_other_box4 {
+    display: block;
+  }
+  .news_other_box p {
+    margin: 10px 0;
+  }
+  .box_footer {
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+    min-width: 532.8px;
+    min-height: 200px;
+    gap: 10px;
+  }
+  .box_content_footer {
+    width: 48%;
+  }
+  .image_footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .image_footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #box-content_3,
+  #box-content_4 {
+    display: none;
+  }
+  .footer_text {
+    min-width: 532.8px;
+    min-height: 200px;
+  }
+  .text_header_footer {
+    text-align: center;
+  }
+  .category {
+    display: none;
+  }
+  .logo-brand {
+    padding-left: 1em;
+  }
+  .menu {
+    margin-right: 1em;
+  }
+  .menu-desktop {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .Social-icon {
+    justify-content: center;
+  }
+  .footer-menu {
+    flex-direction: column;
+    gap: 0;
+    text-align: start;
+  }
+  .footer-menu-link {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-menu-link li {
+    padding: 0.5em 2em;
+  }
+  .footer-menu-link h4 {
+    font-size: 1.2em;
+  }
+  .footer-info {
+    width: 100%;
+  }
+  .footer-menu-link a {
+    background-color: #fff;
+    color: #014197;
+    padding: 0.4em;
+    border-radius: 5px;
+  }
+}

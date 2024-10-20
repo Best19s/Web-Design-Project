@@ -1,0 +1,72 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(desktop.css);
+@import url(mobile.css);
+
+@media screen and (min-width:632px) and (max-width:1024px){
+
+
+    .section{
+        padding: 30px;
+        display: block;
+        
+    }
+    .container_table{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .image_1{
+        display: none;
+    }
+    .image_2{
+        display: none;
+    }
+    .section_2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .main_detail{
+        margin-top: 10px;
+    }
+    .text_detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        padding: 0;
+    }
+    .wrapper{
+        width: 100%;
+        display: block;
+    }
+    .text_main1 {
+        width: 100%;
+        padding: 40px;
+        line-height: 2;
+    }
+    .text_main1_1{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .text_main2{
+        width: 100%;
+        padding: 40px;
+        line-height: 2;
+    }
+    .text_main2_1 {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image_main_detail{
+        margin: 0 auto;
+    }
+}

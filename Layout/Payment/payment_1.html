@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Step 1</title>
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Payment Step 1</title>
-   <link rel="stylesheet" href="css/desktop.css">
-   <link rel="stylesheet" href="css/mobile.css">
-   <link rel="stylesheet" href="css/tablet.css">
-   <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-
-</head>
-
-<body>
-   <nav>
+  <body>
+    <nav>
       <div class="logo-brand">
         <a href="">
           <h2>Belle</h2>
         </a>
       </div>
       <ul class="menu">
-         <li>
-           <a href="../Shopping_bag/shopping_bag.html" class="menu-desktop"
-             ><i class="bi bi-bag-fill"></i></a
-           >
-         </li>
-         <li>
-           <a href=""  class="menu-desktop"
-             ><i class="bi bi-heart-fill"></i></a
-           >
-         </li>
-         <li>
-           <a href=""  class="menu-desktop"
-             ><i class="bi bi-person-circle"></i></a
-           >
-         </li>
-         <li>
-           <a href="" id="hamburger"
-             ><i class="bi bi-list"></i></a
-           >
-         </li>
-        
+        <li>
+          <a href="../Shopping_bag/shopping_bag.html" class="menu-desktop"
+            ><i class="bi bi-bag-fill"></i
+          ></a>
+        </li>
+        <li>
+          <a href="" class="menu-desktop"><i class="bi bi-heart-fill"></i></a>
+        </li>
+        <li>
+          <a href="" class="menu-desktop"
+            ><i class="bi bi-person-circle"></i
+          ></a>
+        </li>
+        <li>
+          <a href="" id="hamburger"><i class="bi bi-list"></i></a>
+        </li>
       </ul>
     </nav>
     <div class="category">
@@ -176,92 +171,95 @@
           <a href="" class="category-link">Best-selling</a>
         </li>
       </ul>
-
-
     </div>
 
-   <div class="breadcrumb">
+    <div class="breadcrumb">
       <ul class="breadcrumb_item">
-         <li>Home</li>
-         <li>Shopping Bag</li>
+        <li>Home</li>
+        <li>Shopping Bag</li>
       </ul>
-   </div>
+    </div>
 
-   <div class="btn-back"><a href="">Back</a></div>
-   <div class="container">
+    <div class="btn-back"><a href="">Back</a></div>
+    <div class="container">
       <div class="payment">
-         <h1>Payment</h1>
-         <div class="step_wrapper">
-            <div class="step1">
-               <h2>Step 1</h2>
-               <p>Fill in your information</p>
-            </div>
-            <div class="step2">
-               <h2>Step 2</h2>
-               <p>Choose Payment Method</p>
-            </div>
-            <div class="step3">
-               <h2>Step 3</h2>
-               <p>Confirm Payment</p>
-            </div>
-         </div>
+        <h1>Payment</h1>
+        <div class="step_wrapper">
+          <div class="step1">
+            <h2>Step 1</h2>
+            <p>Fill in your information</p>
+          </div>
+          <div class="step2">
+            <h2>Step 2</h2>
+            <p>Choose Payment Method</p>
+          </div>
+          <div class="step3">
+            <h2>Step 3</h2>
+            <p>Confirm Payment</p>
+          </div>
+        </div>
       </div>
       <form action="/" method="post">
-         <div class="addr">
-            <label for="addr">Select Address</label>
-            <select name="addr" id="addr">
-               <option value="">Home</option>
-               <option value="">My Condo</option>
+        <div class="addr">
+          <label for="addr">Select Address</label>
+          <select name="addr" id="addr">
+            <option value="">Home</option>
+            <option value="">My Condo</option>
+          </select>
+          <br />
+          <a href="">Add new Address</a>
+        </div>
+        <div class="info">
+          <label class="label_head">Fill in your information</label>
+          <div class="name">
+            <div class="fname">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" />
+            </div>
+            <div class="lname">
+              <label for="lname">Surname</label>
+              <input type="text" id="lname" />
+            </div>
+          </div>
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
 
-            </select> <br>
-            <a href="">Add new Address</a>
-         </div>
-         <div class="info">
-            <label class="label_head">Fill in your information</label>
-            <div class="name">
-               <div class="fname">
-                  <label for="fname">Name</label>
-                  <input type="text" id="fname">
-               </div>
-               <div class="lname">
-                  <label for="lname">Surname</label>
-                  <input type="text" id="lname">
-               </div>
-            </div>
-            <div class="email">
-               <label for="email">Email</label>
-               <input type="email" name="email" id="email">
-            </div>
-
-            <label for="city">Phone: </label>
-            <div class="phone_box">
-               <select name="city_tel" id="city">
-                  <option value="">(66+)</option>
-                  <option value="">(66+)</option>
-                  <option value="">(66+)</option>
-                  <option value="">(66+)</option>
-                  <option value="">(66+)</option>
-               </select>
-               <input type="tel" placeholder="000-000-0000" name="phone" id="phone" required>
-            </div>
-            <input type="submit" value="Continue" class="btn-link">
-         </div>
+          <label for="city">Phone: </label>
+          <div class="phone_box">
+            <select name="city_tel" id="city">
+              <option value="">(66+)</option>
+              <option value="">(66+)</option>
+              <option value="">(66+)</option>
+              <option value="">(66+)</option>
+              <option value="">(66+)</option>
+            </select>
+            <input
+              type="tel"
+              placeholder="000-000-0000"
+              name="phone"
+              id="phone"
+              required
+            />
+          </div>
+          <input type="submit" value="Continue" class="btn-link" />
+        </div>
       </form>
-   </div>
+    </div>
 
-
-   <footer>
+    <footer>
       <div class="footer-info">
         <div class="footer-head">
           <h2>Belle</h2>
           <p>Always Beautiful</p>
         </div>
         <div class="Social-icon">
-          <img src="/img/icon/Facebook.svg" alt="icon Facebook" />
-          <img src="/img/icon/Google.svg" alt="icon Google" />
-          <img src="/img/icon/Gmail.svg" alt="icon Gmail" />
-          <img src="/img/icon/Instagram.svg" alt="icon Instagram" />
-          <img src="/img/icon/TikTok.svg" alt="icon TikTok" />
+          <img src="../../img/icon/Facebook.svg" alt="icon Facebook" />
+          <img src="../../img/icon/Google.svg" alt="icon Google" />
+          <img src="../../img/icon/Gmail.svg" alt="icon Gmail" />
+          <img src="../../img/icon/Instagram.svg" alt="icon Instagram" />
+          <img src="../../img/icon/TikTok.svg" alt="icon TikTok" />
         </div>
         <div class="copyright">
           <h4>© 2024 Belle.com All Rights Reserved.</h4>
@@ -310,7 +308,5 @@
         </ul>
       </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

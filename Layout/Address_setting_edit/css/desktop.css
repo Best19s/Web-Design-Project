@@ -4,9 +4,7 @@
 @import url(../../../component/footer/footer.css);
 @import url(../../../component/bread_crump/bread_crump.css);
 
-.container {
-   margin: 0 10rem;
-}
+
 
 .form_addr {
    box-sizing: border-box;

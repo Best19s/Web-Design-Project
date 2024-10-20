@@ -1,0 +1,342 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(tablet.css);
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ADD8E6;
+    padding: 20px;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+h1{
+    font-family: "Heading-font";
+    font-size: 1.8em;
+}
+p{
+    font-family: "Text-font";
+}
+.box_content h2{
+    font-size: 1.2em;
+    font-family: "Heading-font";
+    margin-bottom: 10px;
+}
+.logo_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    
+}
+.content_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_header ul{
+    display: flex;
+    list-style-type: none;
+}
+.content_header ul li{
+    padding-right: 40px;
+}
+.content_header a{
+    text-decoration: none;
+    color: black;
+}
+
+.box {
+    margin: 0 80px;
+}
+body h1{
+    margin-bottom: 30px;
+}
+section{    
+    display: flex;
+}
+.main{
+    width: 50%;
+}
+aside{
+    width: 50%;
+    /* background-color: #ADD8E6; */
+    padding-left: 60px;
+    min-width: 380px;
+    min-height: 466px;
+}
+.box_content{
+    padding: 20px 20px 20px 0;
+    display: flex;
+    align-items: stretch; /* ให้ container ยืดเต็มขนาด */
+    margin-bottom: 40px;
+    border: 1px solid #000;
+    border-radius: 12px;
+}
+.box_image_main {
+    width: 28%;
+    height: auto; /* ความสูงของ container จะปรับตามเนื้อหา */
+    
+    min-width: 214px; /* กำหนดความกว้างขั้นต่ำ */
+    min-height: 324px; /* กำหนดความสูงขั้นต่ำ */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    text-align: center; /* จัดให้อยู่กลางในแนวนอน */
+}
+
+.box_image_main img {
+    width: 100%; /* ขนาดของรูปภาพ 80% ของ container */
+    height: 100%; /* ความสูงของรูปภาพ 80% ของ container */
+    object-fit: cover; /* ทำให้รูปภาพเต็มพื้นที่ container โดยไม่บิดเบือนสัดส่วน */
+}
+
+.text_main{
+    display: block;
+    width: 60%;
+    margin-left: 20px;
+}
+.header_box_main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.price_content{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+.price_1_content{
+    margin-right: 10px;
+}
+.size-options,.color-options {
+    display: flex;
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+    margin-bottom: 20px;
+}
+
+.size-options select,.color-options select {
+    flex-grow: 1; /* ขยาย select ให้เต็มพื้นที่ที่เหลือ */
+    margin-left: 10px; /* เพิ่มระยะห่างระหว่าง label กับ select */
+    width: 100%; /* คงความกว้าง 100% */
+    padding:8px 10px;
+    border-radius: 12px;
+}
+.size-options label{
+    margin-right: 11px;
+}
+.color-options label{
+    margin-right: 11px;
+}
+.Reason-for-Return select{
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 12px;
+}
+.check_box{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check_box input[type="checkbox"] {
+    width: 15px; /* กำหนดความกว้างของ checkbox */
+    height: 15px; /* กำหนดความสูงของ checkbox */
+    transform: scale(1.5); /* เพิ่มขนาด checkbox */
+    accent-color: #0E6EB3; /* เปลี่ยนสีของ checkbox (สำหรับเบราว์เซอร์ที่รองรับ) */
+    cursor: pointer; /* เปลี่ยน cursor เป็น pointer เมื่อ hover */
+}
+
+.add_quantity{
+    background-color: white;
+    display: flex;
+    text-align: center;
+    min-width:100px ;
+    max-width: 120px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    align-items: center;
+}
+.minus,.num,.plus{
+    /* border: 1px solid #000; */
+    width: 33.3333333%;
+    padding: 2px;
+}
+.num{
+   border-left: 1px solid #000;
+   border-right: 1px solid #000;
+   background-color: #0E6EB3;
+   color: white;
+}
+.quantity_main label{
+    margin-right: 15px;
+}
+.quantity_main{
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.box_total{
+    background-color: white;
+    border: 1px solid #000;
+}
+.box_tatol_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px;
+    background-color: #ADD8E6;
+    /* padding: 10px; */
+}
+.box_text_total{
+    padding: 20px;
+}
+.text_total{
+    display: flex;
+    justify-content: space-between;
+}
+.in_text_total{
+    margin: 8px 0 15px 15px; 
+}
+.in_text_total p{
+    padding: 5px 0;
+}
+.divider {
+    height: 2px; /* ความสูงของเส้น */
+    background-color: #000; /* สีของเส้น */
+    width: 100%; /* ความกว้าง 100% */
+    margin: 20px 0; /* ระยะห่างด้านบนและล่าง */
+}
+.header_delete_main{
+    color: #0E6EB3;
+    padding: 10px 15px 0 0 ;
+}
+.content_total{
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+}
+.content_total h2{
+    margin-bottom: 20px;
+}
+.btn_continue_checkout{
+    padding: 20px;
+    background-color: #0E6EB3;
+    text-align: center;
+    cursor: pointer;
+}
+.btn_continue_checkout a{
+    color: white;
+    
+}
+.box_return h3{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.radio_return{
+    display: flex;
+    padding: 20px;
+}
+.box_radio_return{
+    width: 20%;
+}
+.p_1{
+    width: 80%;
+}
+.return_detail {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* เรียงกล่องในแนวนอน */
+    justify-content: flex-start; /* เริ่มต้นที่ด้านซ้าย */
+    flex-wrap: wrap; /* ให้กล่องขึ้นแถวใหม่เมื่อไม่พอพื้นที่ */
+    gap: 10px; /* ระยะห่างระหว่างกล่อง */
+}
+
+.box_return {
+    width: 32%; /* กำหนดความกว้างเริ่มต้นให้กับกล่อง */
+    border: 1px solid #000;
+    flex-grow: 1; /* ทำให้กล่องขยายเต็มพื้นที่ที่มีอยู่ */
+}
+
+.box_return h3 {
+    background-color: #ADD8E6; /* สีพื้นหลังเริ่มต้นเป็นสีเทา */
+    color: black; /* สีข้อความเป็นสีขาว */
+    padding: 10px;
+    transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสีอย่างราบรื่น */
+}
+
+.box_return.selected h3 {
+    background-color: #0E6EB3; /* สีพื้นหลังเมื่อเลือก */
+    color: white;
+}
+
+.return_detail_2 {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* เรียงกล่องในแนวนอน */
+    justify-content: flex-start; /* เริ่มต้นที่ด้านซ้าย */
+    flex-wrap: wrap; /* ให้กล่องขึ้นแถวใหม่เมื่อไม่พอพื้นที่ */
+    gap: 10px; /* ระยะห่างระหว่างกล่อง */
+}
+
+.box_return_2 {
+    width: 32%; /* กำหนดความกว้างเริ่มต้นให้กับกล่อง */
+    border: 1px solid #000;
+    flex-grow: 1; /* ทำให้กล่องขยายเต็มพื้นที่ที่มีอยู่ */
+}
+.box_return_2 h3{
+    background-color: #ADD8E6; /* สีพื้นหลังเริ่มต้นเป็นสีเทา */
+    color: black; /* สีข้อความเป็นสีขาว */
+    padding: 10px;
+    transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสีอย่างราบรื่น */
+}
+.box_return_2.selected h3 {
+    background-color: #0E6EB3; /* สีพื้นหลังเมื่อเลือก */
+    color: white;
+}
+
+.box_radio_return {
+    position: relative; /* กำหนดตำแหน่ง */
+    width: 20px; /* ความกว้างของ radio button */
+    height: 20px; /* ความสูงของ radio button */
+    margin-right: 10px; /* ระยะห่างระหว่าง radio button และข้อความ */
+}
+
+.box_radio_return input[type="radio"] {
+    appearance: none; /* ยกเลิกการแสดงผลปกติของ radio button */
+    -webkit-appearance: none; /* ยกเลิกการแสดงผลใน Safari */
+    width: 20px; /* ปรับขนาด radio button */
+    height: 20px; /* ปรับขนาด radio button */
+    border: 2px solid #0E6EB3; /* กำหนดสีขอบให้เป็นสีดำ */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    outline: none; /* ยกเลิกเส้นขอบที่ปรากฏเมื่อเลือก */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อวางเหนือ radio button */
+    position: relative; /* กำหนดตำแหน่ง */
+}
+
+.box_radio_return input[type="radio"]:checked {
+    background-color: #0E6EB3; /* เปลี่ยนสีพื้นหลังเมื่อเลือก */
+}
+
+.box_radio_return input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 2.5px; /* ตำแหน่งของจุดภายใน radio button */
+    left: 2.5px; /* ตำแหน่งของจุดภายใน radio button */
+    width: 12px; /* ขนาดจุดภายใน radio button */
+    height: 12px; /* ขนาดจุดภายใน radio button */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    background-color: white; /* สีจุดภายใน radio button */
+}
+.selected_return_methods,.selected_belle_store_types{
+    padding: 10px;
+}

@@ -1,0 +1,252 @@
+@import url(../../../component/body/fonts.css);
+@import url(../../../component/body/style.css);
+@import url(../../../component/navbar/navbar.css);
+@import url(../../../component/footer/footer.css);
+
+/* responsive */
+@import url(mobile.css);
+@import url(tablet.css);
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    
+}
+h1{
+    font-family: "Heading-font";
+}
+h3{
+    font-size: 1.3em;
+    margin: 10px;
+}
+h1{
+    font-size: 1.8em;
+}
+p{
+    font-family: "Text-font";
+}
+.h1_header h1{
+    font-size: 1.8em;
+}
+.section{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.section_2{
+    display: none;
+}
+.container_table {
+   width: 60%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #000;
+    position: relative;
+
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    padding:30px 0;
+    background-color: #0E6EB3;
+    font-weight: bold;
+    color:white ; 
+    line-height: 1.5;
+}
+
+td {
+    background-color: #ADD8E6;
+    padding: 20px 10px;
+}
+
+/* กำหนดเส้นขอบให้ตาราง */
+th, td {
+    border: 1px solid black;
+}
+#tr_hearder td{
+    color: black;
+    background-color: #97d1e5;
+}
+th:hover{
+    background-color:#1186d9 ;
+}
+td:hover{
+    background-color: #5ec4e7;
+}
+.no-right-border{
+	border: none !important;
+}
+
+.image_1{
+    margin-top: 40px;
+    z-index: 998;
+    width:20%;
+    height: auto;
+    max-width: 300px;
+    min-width:100px ;
+
+}
+.image_1 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.image_2{
+    margin-top: 40px;
+    z-index: 997;
+    width:20%;
+    height: auto;
+    max-width: 300px;
+    min-width:100px ;
+}
+.image_2 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.main_detail{
+    margin-top: 50px;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.text_detail{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.image_detail{
+    width:40%;
+    height: auto;
+    min-width: 200px;
+    min-height: 274px;
+
+    max-width: 255px;
+    max-height: 344.06px;
+    
+}
+.image_detail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text{
+    width: 60%;
+    padding: 30px;
+    line-height: 2.5;
+    text-indent: 20px; /* ย่อหน้าตัวแรกเยื้อง 40px */
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+}
+.image_main_detail{
+    margin-top: 40px;
+    margin-top: 40px;
+    width:50%;
+    height: auto;
+}
+.image_main_detail img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#image_main_detail_1 {
+
+}
+#image_main_detail_2{
+}
+#wrapper_1 {
+    margin-top: 50px;
+}
+
+#wrapper_2 {
+    margin-top: 50px;
+}
+
+.text_main1 {
+    width: 50%;
+    padding: 40px;
+    line-height: 2;
+}
+.text_main1_1{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.text_main2{
+    width: 50%;
+    padding: 40px;
+    line-height: 2;
+}
+.text_main2_1 {
+    width: 100%;
+    margin-top: 50px;
+
+}
+/* table 2 */
+h4 {
+    text-align: center;
+    color: #333;
+}
+
+.user-height-range-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #000; /* เส้นขอบของตาราง */
+}
+
+.user-height-range-table th, 
+.user-height-range-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000; /* เส้นขอบเซลล์ */
+}
+
+.user-height-range-table th {
+    background-color: #0E6EB3; /* สีพื้นหลังหัวข้อ */
+    color: white; /* สีตัวอักษรในหัวข้อ */
+    font-weight: bold;
+}
+
+.user-height-range-table td {
+    background-color: #ADD8E6; /* สีพื้นหลังเซลล์ */
+    color: #000000; /* สีตัวอักษรในเซลล์ */
+}
+
+.note {
+    margin-top: 10px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.main_detail_2{
+    margin-top: 60px;
+}
+.divider {
+    height: 1px; /* ความสูงของเส้น */
+    background-color: #000; /* สีของเส้น */
+    width: 100%; /* ความกว้าง 100% */
+    margin: 20px 0; /* ระยะห่างด้านบนและล่าง */
+}

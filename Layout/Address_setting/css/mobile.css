@@ -23,6 +23,7 @@
   }
   .btn-back a {
     display: block;
+    margin-top: 1em;
     padding: 0.2em 0.5em;
     border-radius: 5px;
     width: fit-content;
