@@ -45,6 +45,10 @@
 .post_code {
    width: 30%;
 }
+
+.post_code label {
+   text-wrap: nowrap;
+}
 .city {
    width: 100%;
 }
