@@ -1,13 +1,13 @@
 @font-face {
-   font-family: "Text-font";
-   src: url(../../asset/fonts/Satoshi-Regular.otf);
+   font-family: "--text";
+   src: url(../../asset/fonts/general/GeneralSans-Regular.otf);
  }
  @font-face {
-   font-family: "Heading-font";
-   src: url(../../asset/fonts/Boska-BoldItalic.otf);
+   font-family: "--head";
+   src: url(../../asset/fonts/general/GeneralSans-Semibold.otf);
  }
  @font-face {
-   font-family: "paragraph-font";
-   src: url(../../asset/fonts/Boska-Regular.otf);
+   font-family: "--italic";
+   src: url(../../asset/fonts/general/GeneralSans-Italic.otf);
  }
 
